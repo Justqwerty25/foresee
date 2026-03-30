@@ -1,0 +1,27 @@
+{
+  "name": "remotion-videos",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "studio": "remotion studio src/index.js",
+    "render:packshot": "remotion still src/index.js Packshot --output=../public/images/generated-packshot.png",
+    "render:hero": "remotion still src/index.js Hero --output=../public/images/generated-hero.png",
+    "render:lifestyle": "remotion still src/index.js Lifestyle --output=../public/images/generated-lifestyle.png",
+    "render:detail": "remotion still src/index.js Detail --output=../public/images/generated-detail.png",
+    "render:video": "remotion render src/index.js ShowcaseVideo --output=../public/videos/showcase.mp4",
+    "render:all-stills": "npm run render:packshot && npm run render:hero && npm run render:lifestyle && npm run render:detail",
+    "render:all": "npm run render:all-stills && npm run render:video"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "type": "module",
+  "dependencies": {
+    "@remotion/cli": "^4.0.441",
+    "@remotion/renderer": "^4.0.441",
+    "react": "^19.2.4",
+    "react-dom": "^19.2.4",
+    "remotion": "^4.0.441"
+  }
+}
