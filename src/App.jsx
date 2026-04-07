@@ -103,7 +103,7 @@ const TRANSLATIONS = {
       label: "聯絡我們",
       title: "預約諮詢",
       subtitle: "歡迎透過以下方式與我們聯繫，我們將盡快回覆您的訊息。",
-      phone: "0900-000-000",
+      phone: "0972-977-035",
       email: "info@foreseept.com",
       address: {
         name: "預見物理治療所",
@@ -226,7 +226,7 @@ const TRANSLATIONS = {
       label: "Contact",
       title: "Book a Consultation",
       subtitle: "Reach out through any of the channels below. We'll respond as soon as possible.",
-      phone: "0900-000-000",
+      phone: "0972-977-035",
       email: "info@foreseept.com",
       address: {
         name: "Foresee Physiotherapy Clinic",
