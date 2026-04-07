@@ -210,7 +210,7 @@ const TRANSLATIONS = {
       story: "Foresee Physiotherapy Clinic upholds the philosophy of 'Foresee the Future, Cultivate Seeds of Love,' dedicated to providing every child with the most professional and warm physiotherapy services. We believe every child has unlimited potential, and through early intervention and continuous professional support, we can help them shine their brightest.",
       story2: "Our therapy team combines traditional physiotherapy techniques with innovative technology, including our self-developed 3D printed custom orthotics, providing comprehensive treatment solutions for children. Here, every therapy session is filled with laughter and love.",
       mission: "Our Mission",
-      missionText: "To combine professional physiotherapy with warm care and innovative assistive technology, accompanying every child on their journey toward healthy, joyful growth.",
+      missionText: "To accompany every child on a healthy and happy growth path with professional physiotherapy, warm care, and innovative assistive technology.",
       therapist: {
         name: "Ya-Hui Huang, PT",
         role: "Founder / Physiotherapist",
@@ -842,142 +842,102 @@ function HomePage({ t }) {
             <motion.div initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: EASE, delay: 0.8 }}
               className="flex flex-col sm:flex-row flex-wrap gap-3 sm:gap-4">
               <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
-                style={{ background: C.accent, color: C.bgDark }}>
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-white font-bold transition-all duration-300 hover:scale-[1.03] hover:shadow-xl shadow-lg"
+                style={{ background: `linear-gradient(135deg, ${C.primary}, ${C.primaryDark})` }}>
                 <Phone size={18} /> {t.hero.ctaPrimary}
               </a>
               <a href="#services" onClick={(e) => { e.preventDefault(); navigate("services"); }}
-                className="inline-flex items-center justify-center gap-2.5 px-7 py-3.5 rounded-xl text-white text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:bg-white/15"
-                style={{ border: "1.5px solid rgba(255,255,255,0.25)" }}>
+                className="inline-flex items-center justify-center gap-2.5 px-8 py-4 rounded-xl text-white font-bold transition-all duration-300 hover:bg-white/10"
+                style={{ border: "1px solid rgba(255,255,255,0.2)" }}>
                 {t.hero.ctaSecondary} <ArrowUpRight size={18} />
               </a>
             </motion.div>
           </div>
         </motion.div>
 
-        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5 }}
-          className="absolute bottom-8 left-1/2 -translate-x-1/2 flex flex-col items-center gap-2">
-          <motion.div animate={{ y: [0, 8, 0] }} transition={{ repeat: Infinity, duration: 1.5 }}
-            className="w-5 h-8 rounded-full border border-white/20 flex items-start justify-center pt-1.5">
-            <div className="w-1 h-1.5 rounded-full bg-white/50" />
+        <motion.div initial={{ opacity: 0 }} animate={{ opacity: 1 }} transition={{ delay: 1.5, duration: 1 }}
+          className="absolute bottom-10 left-1/2 -translate-x-1/2 hidden md:block">
+          <motion.div animate={{ y: [0, 10, 0] }} transition={{ duration: 2, repeat: Infinity, ease: "easeInOut" }}>
+            <ChevronDown size={32} className="text-white/20" />
           </motion.div>
         </motion.div>
       </section>
 
-      {/* MARQUEE */}
-      <div className="overflow-hidden py-3" style={{ background: `linear-gradient(90deg, ${C.primary}, ${C.primaryDark})` }}>
-        <motion.div className="flex whitespace-nowrap" animate={{ x: ["0%", "-50%"] }} transition={{ duration: 25, repeat: Infinity, ease: "linear" }}>
-          {[...t.services.items, ...t.services.items, ...t.services.items, ...t.services.items].map((s, i) => (
-            <span key={i} className="flex items-center gap-5 px-5">
-              <span className="text-sm font-semibold tracking-[0.08em] uppercase text-white/90">{s.title}</span>
-              <Star size={10} fill={C.accent} stroke="none" />
-            </span>
-          ))}
-        </motion.div>
-      </div>
-
       {/* STATS */}
-      <section className="py-16 lg:py-20" style={{ background: C.bg }}>
-        <div className="max-w-4xl mx-auto px-5 lg:px-8">
-          <div className="grid grid-cols-3 gap-6">
-            <ScrollReveal delay={0}><SlotCounter value={10} suffix="+" label={t.stats.years} /></ScrollReveal>
-            <ScrollReveal delay={0.1}><SlotCounter value={500} suffix="+" label={t.stats.children} /></ScrollReveal>
-            <ScrollReveal delay={0.2}><SlotCounter value={98} suffix="%" label={t.stats.satisfaction} /></ScrollReveal>
+      <section className="py-16 lg:py-24" style={{ background: C.bg }}>
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-20">
+            <ScrollReveal delay={0.1}><SlotCounter value={10} suffix="+" label={t.stats.years} /></ScrollReveal>
+            <ScrollReveal delay={0.2}><SlotCounter value={1000} suffix="+" label={t.stats.children} /></ScrollReveal>
+            <ScrollReveal delay={0.3}><SlotCounter value={99} suffix="%" label={t.stats.satisfaction} /></ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* SERVICES PREVIEW */}
-      <section className="py-20 lg:py-28" style={{ background: C.bgAlt }}>
+      {/* FEATURES PREVIEW */}
+      <section className="py-20 lg:py-32 overflow-hidden" style={{ background: C.bgAlt }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <SectionHeading label={t.services.label} title={t.services.title} subtitle={t.services.subtitle} />
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {t.services.items.map((service, i) => (
-              <ScrollReveal key={i} delay={i * 0.08}>
-                <SpotlightCard className="rounded-3xl cursor-pointer h-full">
-                  <motion.div whileHover={{ y: -6, transition: { duration: 0.3 } }}
-                    className="group rounded-3xl overflow-hidden h-full p-7"
-                    style={{ background: C.cardBg, border: `1px solid ${C.border}`, boxShadow: `0 4px 20px ${C.primary}08` }}
-                    onClick={() => navigate("services")}>
-                    <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
-                        style={{ background: `linear-gradient(135deg, ${C.primary}20, ${C.primaryLight}20)`, color: C.primaryDark }}>
-                        <Icon name={service.icon} size={24} />
-                      </div>
-                      <h3 className="text-lg font-bold tracking-tight" style={{ color: C.text }}>{service.title}</h3>
-                    </div>
-                    <p className="text-sm leading-relaxed mb-4" style={{ color: C.textMuted }}>{service.desc}</p>
-                    <div className="inline-flex items-center gap-1.5 text-sm font-semibold" style={{ color: C.primaryDark }}>
-                      {t.services.more} <ArrowUpRight size={14} />
-                    </div>
-                  </motion.div>
-                </SpotlightCard>
-              </ScrollReveal>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      <WaveDivider color={C.bg} />
-
-      {/* PRODUCT TEASER */}
-      <section className="py-20 lg:py-28 relative overflow-hidden" style={{ background: C.bg }}>
-        <DecorativeStars count={5} />
-        <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24 items-center">
             <ScrollReveal>
-              <span className="inline-block text-xs font-semibold tracking-[0.15em] uppercase mb-4 px-4 py-1.5 rounded-full"
-                style={{ color: C.primaryDark, background: `${C.primary}18` }}>{t.product.label}</span>
-              <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight leading-[1.2] mb-5" style={{ color: C.text }}>{t.product.title}</h2>
-              <p className="text-base lg:text-lg leading-relaxed mb-8" style={{ color: C.textMuted }}>{t.product.subtitle}</p>
-              <div className="grid grid-cols-2 gap-4 mb-8">
-                {t.product.features.map((f, i) => (
-                  <div key={i} className="flex items-start gap-3">
-                    <div className="w-8 h-8 rounded-lg flex items-center justify-center flex-shrink-0 mt-0.5"
-                      style={{ background: `${C.accent}20`, color: C.accentHover }}><Icon name={f.icon} size={16} /></div>
-                    <span className="text-sm font-medium" style={{ color: C.text }}>{f.title}</span>
+              <SectionHeading label={t.services.label} title={t.services.title} subtitle={t.services.subtitle} center={false} />
+              <div className="grid grid-cols-1 sm:grid-cols-2 gap-6 mt-10">
+                {t.services.items.slice(0, 4).map((item, i) => (
+                  <div key={i} className="p-6 rounded-2xl transition-all duration-300 hover:-translate-y-1" style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
+                    <div className="w-12 h-12 rounded-xl flex items-center justify-center mb-4" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                      <Icon name={item.icon} size={22} />
+                    </div>
+                    <h3 className="font-bold mb-2" style={{ color: C.text }}>{item.title}</h3>
+                    <p className="text-sm leading-relaxed" style={{ color: C.textMuted }}>{item.desc}</p>
                   </div>
                 ))}
               </div>
-              <a href="#product" onClick={(e) => { e.preventDefault(); navigate("product"); }}
-                className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-semibold no-underline transition-all duration-300 hover:scale-[1.03] hover:shadow-lg"
-                style={{ background: `linear-gradient(135deg, ${C.primary}, ${C.primaryDark})` }}>
-                {t.common.learnMore} <ArrowUpRight size={16} />
-              </a>
+              <div className="mt-10">
+                <a href="#services" onClick={(e) => { e.preventDefault(); navigate("services"); }}
+                  className="inline-flex items-center gap-2 text-sm font-bold no-underline transition-all duration-300 group" style={{ color: C.primaryDark }}>
+                  {t.services.more} <ChevronRight size={16} className="transition-transform group-hover:translate-x-1" />
+                </a>
+              </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.2} direction="scale">
-              <div className="relative">
-                <ProductImage src="/images/packshot-pairs-dark.jpg" alt="3D列印客製化副木" iconFallback={Printer}
-                  className="rounded-3xl overflow-hidden aspect-[4/3] shadow-xl" style={{ border: `1px solid ${C.primary}20` }} />
-                <div className="absolute -bottom-3 -right-3 w-28 h-28 sm:w-36 sm:h-36 rounded-2xl overflow-hidden shadow-lg z-10"
-                  style={{ border: `3px solid ${C.bg}` }}>
-                  <ProductImage src="/images/packshot-trio.jpg" alt="副木使用中" iconFallback={Hand}
-                    className="w-full h-full" />
+
+            <ScrollReveal direction="scale" className="relative">
+              <div className="rounded-[2.5rem] overflow-hidden aspect-square shadow-2xl relative z-10" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/packshot-white.png" alt="Foresee Pediatric Physiotherapy" iconFallback={Baby} className="w-full h-full" />
+              </div>
+              <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20" style={{ background: C.accent, filter: "blur(60px)" }} />
+              <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full opacity-20" style={{ background: C.primary, filter: "blur(60px)" }} />
+              <div className="absolute top-1/2 -right-6 -translate-y-1/2 p-5 rounded-2xl warm-glass z-20 shadow-xl hidden sm:block">
+                <div className="flex items-center gap-4">
+                  <div className="w-10 h-10 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center"><CheckCircle2 size={20} /></div>
+                  <div>
+                    <div className="text-xs font-bold" style={{ color: C.text }}>Professional Care</div>
+                    <div className="text-[10px]" style={{ color: C.textMuted }}>Tailored to your child</div>
+                  </div>
                 </div>
-                <div className="absolute -bottom-4 -left-4 w-full h-full rounded-3xl -z-10" style={{ border: `2px solid ${C.accent}30` }} />
               </div>
             </ScrollReveal>
           </div>
         </div>
       </section>
 
-      {/* CTA BAND */}
-      <section className="relative py-20 lg:py-28 overflow-hidden"
-        style={{ background: `linear-gradient(135deg, ${C.primaryDark} 0%, ${C.bgDark} 100%)` }}>
-        <DecorativeStars count={8} />
-        <div className="relative z-10 max-w-3xl mx-auto px-5 lg:px-8 text-center">
+      {/* CTA SECTION */}
+      <section className="py-20 lg:py-32">
+        <div className="max-w-5xl mx-auto px-5 lg:px-8">
           <ScrollReveal>
-            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold text-white tracking-tight mb-5">
-              {t.nav.home === "首頁" ? "讓我們一起陪伴孩子成長" : "Let's Support Your Child Together"}
-            </h2>
-            <p className="text-white/60 text-base lg:text-lg mb-8 max-w-lg mx-auto">
-              {t.nav.home === "首頁" ? "預約諮詢，了解我們如何幫助您的孩子邁向健康快樂的未來。" : "Book a consultation to learn how we can help your child thrive."}
-            </p>
-            <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
-              className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.95rem] font-bold no-underline transition-all duration-300 hover:scale-[1.03] hover:shadow-xl"
-              style={{ background: C.accent, color: C.bgDark }}>
-              <Phone size={18} /> {t.nav.cta}
-            </a>
+            <div className="rounded-[3rem] p-10 sm:p-16 lg:p-20 text-center relative overflow-hidden"
+              style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
+              <DecorativeStars count={10} />
+              <div className="relative z-10">
+                <h2 className="font-heading text-3xl sm:text-4xl md:text-5xl font-bold text-white mb-6 tracking-tight leading-[1.15]">{t.common.contactUs}</h2>
+                <div className="flex flex-col sm:flex-row items-center justify-center gap-4">
+                  <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                    className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white font-bold transition-all duration-300 hover:scale-[1.03] shadow-lg"
+                    style={{ color: C.primaryDark }}>{t.common.bookNow}</a>
+                  <a href={`tel:${t.contact.phone}`}
+                    className="w-full sm:w-auto px-8 py-4 rounded-xl text-white font-bold transition-all duration-300 hover:bg-white/10"
+                    style={{ border: "1px solid rgba(255,255,255,0.2)" }}>{t.contact.phone}</a>
+                </div>
+              </div>
+            </div>
           </ScrollReveal>
         </div>
       </section>
@@ -992,12 +952,12 @@ function ServicesPage({ t }) {
   return (
     <>
       <PageHero title={t.services.title} subtitle={t.services.subtitle} t={t} />
-      <section className="py-20 lg:py-28" style={{ background: C.bg }}>
+      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="space-y-16 lg:space-y-24">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
             {t.services.items.map((service, i) => (
-              <ScrollReveal key={i} delay={0.1}>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
+              <ScrollReveal key={i}>
+                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
                   <div className="lg:[direction:ltr]">
                     <div className="rounded-3xl overflow-hidden aspect-[4/3]"
                       style={{ border: `1px solid ${C.primary}25` }}>
@@ -1166,7 +1126,7 @@ function ProductPage({ t }) {
                     </div>
                     <div className="flex-1 p-6 rounded-2xl" style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
                       <div className="md:hidden inline-flex items-center gap-2 mb-3 px-3 py-1 rounded-full text-xs font-bold" style={{ background: `${C.primary}15`, color: C.primaryDark }}>{step.num}</div>
-                      <h3 className="font-heading text-xl font-bold mb-2" style={{ color: C.text }}>{step.title}</h3>
+                      <h3 className="font-bold text-lg mb-2" style={{ color: C.text }}>{step.title}</h3>
                       <p className="text-sm leading-relaxed" style={{ color: C.textMuted }}>{step.desc}</p>
                     </div>
                   </div>
@@ -1178,26 +1138,17 @@ function ProductPage({ t }) {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 lg:py-28" style={{ background: C.bg }}>
+      <section className="py-20 lg:py-28" style={{ background: C.bgAlt }}>
         <div className="max-w-3xl mx-auto px-5 lg:px-8">
           <SectionHeading title={t.product.faq.title} />
-          {t.product.faq.items.map((item, i) => (
-            <FaqItem key={i} q={item.q} a={item.a} isOpen={openFaq === i} onClick={() => setOpenFaq(openFaq === i ? null : i)} />
-          ))}
+          <div className="space-y-4">
+            {t.product.faq.items.map((item, i) => (
+              <ScrollReveal key={i} delay={i * 0.1}>
+                <FaqItem q={item.q} a={item.a} isOpen={openFaq === i} onClick={() => setOpenFaq(openFaq === i ? null : i)} />
+              </ScrollReveal>
+            ))}
+          </div>
         </div>
-      </section>
-
-      {/* CTA */}
-      <section className="py-20 lg:py-24 text-center" style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
-        <ScrollReveal>
-          <Printer size={48} className="mx-auto mb-6" style={{ color: C.accent }} />
-          <h2 className="font-heading text-3xl sm:text-4xl font-bold text-white mb-6">{t.product.cta}</h2>
-          <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
-            className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.95rem] font-bold no-underline transition-all duration-300 hover:scale-[1.03]"
-            style={{ background: C.accent, color: C.bgDark }}>
-            <Phone size={18} /> {t.nav.cta}
-          </a>
-        </ScrollReveal>
       </section>
     </>
   );
@@ -1275,41 +1226,25 @@ function ContactPage({ t }) {
       <PageHero title={c.title} subtitle={c.subtitle} t={t} />
       <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-16">
-            <div className="space-y-5">
-              {[
-                { href: `tel:${c.phone}`, icon: <Phone size={22} />, title: c.phone, sub: c.hours, bg: `${C.primary}12`, color: C.primaryDark },
-                { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },
-                { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },
-                { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },
-              ].map((item, i) => (
-                <ScrollReveal key={i} delay={i * 0.08}>
-                  <a href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
-                    className="flex items-start gap-4 p-5 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
-                    style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
-                    <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: item.bg, color: item.color }}>{item.icon}</div>
-                    <div>
-                      <div className="font-bold text-[0.95rem] mb-0.5" style={{ color: C.text }}>{item.title}</div>
-                      {item.sub && <p className="text-sm" style={{ color: C.textMuted }}>{item.sub}</p>}
-                    </div>
-                  </a>
-                </ScrollReveal>
-              ))}
-              <ScrollReveal delay={0.35}>
-                <div className="flex items-start gap-4 p-5 rounded-2xl" style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
-                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: `${C.primary}12`, color: C.primaryDark }}><MapPin size={22} /></div>
+          <div className="max-w-2xl mx-auto space-y-5">
+            {[
+              { href: `tel:${c.phone}`, icon: <Phone size={22} />, title: c.phone, sub: c.hours, bg: `${C.primary}12`, color: C.primaryDark },
+              { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },
+              { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },
+              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },
+            ].map((item, i) => (
+              <ScrollReveal key={i} delay={i * 0.08}>
+                <a href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
+                  className="flex items-start gap-4 p-5 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
+                  style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
+                  <div className="w-12 h-12 rounded-xl flex items-center justify-center flex-shrink-0" style={{ background: item.bg, color: item.color }}>{item.icon}</div>
                   <div>
-                    <div className="font-bold text-[0.95rem] mb-0.5" style={{ color: C.text }}>{c.address.name}</div>
-                    <p className="text-sm leading-relaxed" style={{ color: C.textMuted }}>{c.address.street}<br />{c.address.detail}</p>
+                    <div className="font-bold text-[0.95rem] mb-0.5" style={{ color: C.text }}>{item.title}</div>
+                    {item.sub && <p className="text-sm" style={{ color: C.textMuted }}>{item.sub}</p>}
                   </div>
-                </div>
+                </a>
               </ScrollReveal>
-            </div>
-            <ScrollReveal delay={0.2} direction="scale">
-              <div className="rounded-3xl overflow-hidden h-full min-h-[400px]" style={{ border: `1px solid ${C.border}` }}>
-                <iframe src={c.mapUrl} width="100%" height="100%" style={{ border: 0, minHeight: 500 }} allowFullScreen loading="lazy" title="Location" />
-              </div>
-            </ScrollReveal>
+            ))}
           </div>
         </div>
       </section>
@@ -1354,7 +1289,6 @@ function Footer({ t, lang }) {
             <ul className="space-y-2.5 list-none">
               <li><a href={`tel:${t.contact.phone}`} className="text-sm text-white/50 hover:text-white/80 transition-colors no-underline flex items-center gap-2"><Phone size={14} /> {t.contact.phone}</a></li>
               <li><a href={`mailto:${t.contact.email}`} className="text-sm text-white/50 hover:text-white/80 transition-colors no-underline flex items-center gap-2"><Mail size={14} /> {t.contact.email}</a></li>
-              <li className="text-sm text-white/40 flex items-start gap-2 pt-1"><MapPin size={14} className="mt-0.5 flex-shrink-0" /><span>{t.contact.address.street}</span></li>
             </ul>
           </div>
         </div>
@@ -1403,11 +1337,10 @@ function CookieBanner({ t }) {
   useEffect(() => { if (!localStorage.getItem("foresee-cookie-consent")) setVisible(true); }, []);
   if (!visible) return null;
   return (
-    <motion.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: EASE }} className="fixed bottom-0 left-0 right-0 z-[70] p-4 sm:p-5">
-      <div className="max-w-3xl mx-auto rounded-2xl p-5 sm:p-6 shadow-2xl flex flex-col sm:flex-row items-start sm:items-center gap-4"
-        style={{ background: C.bgDark, border: "1px solid rgba(255,255,255,0.08)" }}>
-        <p className="flex-1 text-sm text-white/80 leading-relaxed">{t.cookie.text}</p>
-        <div className="flex gap-2 flex-shrink-0">
+    <motion.div initial={{ y: 100, opacity: 0 }} animate={{ y: 0, opacity: 1 }} transition={{ duration: 0.5, ease: EASE }} className="fixed bottom-0 left-0 right-0 z-[70] p-4 sm:p-6">
+      <div className="max-w-4xl mx-auto warm-glass rounded-2xl p-4 sm:p-5 shadow-2xl flex flex-col sm:flex-row items-center justify-between gap-4">
+        <p className="text-xs sm:text-sm font-medium" style={{ color: C.text }}>{t.cookie.text}</p>
+        <div className="flex items-center gap-3">
           <button onClick={() => { localStorage.setItem("foresee-cookie-consent", "declined"); setVisible(false); }}
             className="px-4 py-2 rounded-lg text-xs font-semibold text-white/50 hover:text-white/80 transition-colors bg-transparent cursor-pointer"
             style={{ border: "1px solid rgba(255,255,255,0.12)" }}>{t.cookie.decline}</button>
