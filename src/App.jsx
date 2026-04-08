@@ -48,6 +48,7 @@ const TRANSLATIONS = {
         { icon: "Hand", title: "手部精細動作", desc: "專注於手部功能訓練，包括抓握、操作和書寫等精細動作技巧的提升。", features: ["抓握與操作訓練", "手眼協調活動", "書寫前備技巧"] },
         { icon: "PersonStanding", title: "姿勢訓練", desc: "矯正不良姿勢習慣，建立正確的身體排列，預防日後骨骼肌肉問題。", features: ["姿勢評估與矯正", "核心穩定訓練", "人體工學指導"] },
         { icon: "HandHelping", title: "家長諮詢", desc: "提供家長專業的居家訓練指導，讓治療效果延伸至日常生活中。", features: ["居家活動指導", "環境調整建議", "發展階段諮詢"] },
+        { icon: "Brain", title: "公開演講", desc: "分享兒童物理治療的最新知識和臨床經驗，為家長和專業人士提供教育性的演講和工作坊。", features: ["發展里程碑講座", "家長教育工作坊", "專業培訓課程"] },
       ],
     },
     product: {
@@ -103,8 +104,7 @@ const TRANSLATIONS = {
       label: "聯絡我們",
       title: "預約諮詢",
       subtitle: "歡迎透過以下方式與我們聯繫，我們將盡快回覆您的訊息。",
-      phone: "0972-977-035",
-      email: "info@foreseept.com",
+      email: "1985yahui@gmail.com",
       address: {
         name: "預見物理治療所",
         street: "台灣台中市XX區XX路XX號",
@@ -171,6 +171,7 @@ const TRANSLATIONS = {
         { icon: "Hand", title: "Fine Motor Skills", desc: "Focused on hand function training, including grasping, manipulation, and writing skill improvement.", features: ["Grasp & manipulation", "Hand-eye coordination", "Pre-writing skills"] },
         { icon: "PersonStanding", title: "Posture Training", desc: "Correcting poor posture habits, establishing proper body alignment, preventing future musculoskeletal issues.", features: ["Posture assessment", "Core stability training", "Ergonomic guidance"] },
         { icon: "HandHelping", title: "Parent Consultation", desc: "Professional home training guidance for parents, extending therapy benefits into daily life.", features: ["Home activity guidance", "Environment modification", "Developmental counseling"] },
+        { icon: "Brain", title: "Public Speaking", desc: "Share the latest knowledge and clinical experience in pediatric physiotherapy through educational lectures and workshops for parents and professionals.", features: ["Developmental milestone seminars", "Parent education workshops", "Professional training courses"] },
       ],
     },
     product: {
@@ -226,8 +227,7 @@ const TRANSLATIONS = {
       label: "Contact",
       title: "Book a Consultation",
       subtitle: "Reach out through any of the channels below. We'll respond as soon as possible.",
-      phone: "0972-977-035",
-      email: "info@foreseept.com",
+      email: "1985yahui@gmail.com",
       address: {
         name: "Foresee Physiotherapy Clinic",
         street: "XX Road, XX District, Taichung, Taiwan",
@@ -866,9 +866,7 @@ function HomePage({ t }) {
       {/* STATS */}
       <section className="py-16 lg:py-24" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-20">
-            <ScrollReveal delay={0.1}><SlotCounter value={10} suffix="+" label={t.stats.years} /></ScrollReveal>
-            <ScrollReveal delay={0.2}><SlotCounter value={1000} suffix="+" label={t.stats.children} /></ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-20">\n            <ScrollReveal delay={0.1}><SlotCounter value={18} suffix="+" label={t.stats.years} /></ScrollReveal>            <ScrollReveal delay={0.2}><SlotCounter value={1000} suffix="+" label={t.stats.children} /></ScrollReveal>
             <ScrollReveal delay={0.3}><SlotCounter value={99} suffix="%" label={t.stats.satisfaction} /></ScrollReveal>
           </div>
         </div>
@@ -932,9 +930,6 @@ function HomePage({ t }) {
                   <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
                     className="w-full sm:w-auto px-8 py-4 rounded-xl bg-white font-bold transition-all duration-300 hover:scale-[1.03] shadow-lg"
                     style={{ color: C.primaryDark }}>{t.common.bookNow}</a>
-                  <a href={`tel:${t.contact.phone}`}
-                    className="w-full sm:w-auto px-8 py-4 rounded-xl text-white font-bold transition-all duration-300 hover:bg-white/10"
-                    style={{ border: "1px solid rgba(255,255,255,0.2)" }}>{t.contact.phone}</a>
                 </div>
               </div>
             </div>
@@ -1226,13 +1221,7 @@ function ContactPage({ t }) {
       <PageHero title={c.title} subtitle={c.subtitle} t={t} />
       <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="max-w-2xl mx-auto space-y-5">
-            {[
-              { href: `tel:${c.phone}`, icon: <Phone size={22} />, title: c.phone, sub: c.hours, bg: `${C.primary}12`, color: C.primaryDark },
-              { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },
-              { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },
-              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },
-            ].map((item, i) => (
+          <div className="max-w-2xl mx-auto space-y-5">            {[\n              { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },\n              { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },\n              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },          ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
                 <a href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
                   className="flex items-start gap-4 p-5 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
@@ -1287,7 +1276,7 @@ function Footer({ t, lang }) {
           <div>
             <h4 className="text-xs tracking-[0.12em] uppercase text-white/30 mb-5 font-semibold">{t.footer.contactTitle}</h4>
             <ul className="space-y-2.5 list-none">
-              <li><a href={`tel:${t.contact.phone}`} className="text-sm text-white/50 hover:text-white/80 transition-colors no-underline flex items-center gap-2"><Phone size={14} /> {t.contact.phone}</a></li>
+
               <li><a href={`mailto:${t.contact.email}`} className="text-sm text-white/50 hover:text-white/80 transition-colors no-underline flex items-center gap-2"><Mail size={14} /> {t.contact.email}</a></li>
             </ul>
           </div>
