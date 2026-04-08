@@ -866,7 +866,9 @@ function HomePage({ t }) {
       {/* STATS */}
       <section className="py-16 lg:py-24" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-20">\n            <ScrollReveal delay={0.1}><SlotCounter value={18} suffix="+" label={t.stats.years} /></ScrollReveal>            <ScrollReveal delay={0.2}><SlotCounter value={1000} suffix="+" label={t.stats.children} /></ScrollReveal>
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 lg:gap-20">
+            <ScrollReveal delay={0.1}><SlotCounter value={18} suffix="+" label={t.stats.years} /></ScrollReveal>
+            <ScrollReveal delay={0.2}><SlotCounter value={1000} suffix="+" label={t.stats.children} /></ScrollReveal>
             <ScrollReveal delay={0.3}><SlotCounter value={99} suffix="%" label={t.stats.satisfaction} /></ScrollReveal>
           </div>
         </div>
@@ -1221,7 +1223,12 @@ function ContactPage({ t }) {
       <PageHero title={c.title} subtitle={c.subtitle} t={t} />
       <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="max-w-2xl mx-auto space-y-5">            {[\n              { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },\n              { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },\n              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },          ].map((item, i) => (
+          <div className="max-w-2xl mx-auto space-y-5">
+            {[
+              { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },
+              { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },
+              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },
+            ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
                 <a href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
                   className="flex items-start gap-4 p-5 rounded-2xl no-underline transition-all duration-300 hover:-translate-y-1 hover:shadow-md"
