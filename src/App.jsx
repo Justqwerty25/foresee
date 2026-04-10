@@ -24,9 +24,9 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "兒童物理治療專家",
-      headline: "預見未來",
-      headlineAccent: "耕耘愛的種子",
-      subtext: "專為兒童設計的物理治療服務，結合專業技術與溫暖關懷，陪伴每一位孩子健康成長。",
+      headline: "預見專業",
+      headlineAccent: "圖繪旅程",
+      subtext: "專為兒童設計的物理治療服務，結合專業技術與溫暖關懷，從診間到戶外，陪伴每一位孩子探索世界。",
       ctaPrimary: "預約諮詢",
       ctaSecondary: "了解更多",
     },
@@ -80,15 +80,22 @@ const TRANSLATIONS = {
           { q: "副木可以碰水嗎？", a: "我們使用的3D列印材料具有防水特性，日常接觸水分不會影響副木的功能，但建議避免長時間浸泡。" },
         ],
       },
+      quote: "「我們不只是在做一個輔具，我們是在幫孩子找回他原本就有的『主動權』。這多出來的一點協助，就是他探索世界的起點。」",
       cta: "預約副木諮詢",
     },
     about: {
       label: "關於我們",
-      title: "預見物理治療所",
-      story: "預見物理治療所秉持著「預見未來，耕耘愛的種子」的理念，致力於為每一位孩子提供最專業、最溫暖的物理治療服務。我們相信，每個孩子都有無限的潛能，透過早期介入與持續的專業支持，能夠幫助他們綻放最美的光芒。",
+      title: "預見旅圖",
+      tagline: "預見專業，圖繪旅程。",
+      intro: "「預見旅圖」的誕生，源於我們深信每一位孩子，都應擁有探索世界的權利。",
+      foreseeTitle: "「預見」",
+      foreseeText: "憑藉在物理治療領域深耕多年的豐厚實務經驗，我們擁有一雙細膩觀察發展需求的眼睛，不僅能洞察目前的限制，更能看見孩子未來的潛力。我們將這份專業轉化為最具溫度的實體支撐，落實於每一項輔具與建議中。",
+      journeyTitle: "「旅圖」",
+      journeyText: "復健不應侷限於診間。透過舉辦各式共融活動與職能體驗，我們將復健目標化為生活練習，為孩子規劃出從診間通往戶外、與社會接軌的實踐路徑，讓成長在探索中真實發生。",
+      story: "我們不只製作輔具，更是在陪伴家庭繪製通往希望的藍圖。我們將專業化為最穩定的支撐，讓孩子能站在專業的肩膀上，預見更遙遠、更寬廣的未來。",
       story2: "我們的治療團隊結合傳統物理治療技術與創新科技，包括自主研發的3D列印客製化副木，為孩子們提供全方位的治療方案。在這裡，每一次的治療都充滿歡笑與愛。",
       mission: "我們的使命",
-      missionText: "以專業的物理治療技術，結合溫暖的關懷與創新的輔具科技，陪伴每一位孩子邁向健康、快樂的成長之路。",
+      missionText: "以專業的物理治療技術，結合溫暖的關懷與創新的輔具科技，陪伴每一位孩子從診間走向戶外、走向社會，邁向健康、快樂的成長之路。",
       therapist: {
         name: "黃雅惠 治療師",
         role: "創辦人 / 物理治療師",
@@ -106,7 +113,7 @@ const TRANSLATIONS = {
       subtitle: "歡迎透過以下方式與我們聯繫，我們將盡快回覆您的訊息。",
       email: "1985yahui@gmail.com",
       address: {
-        name: "預見物理治療所",
+        name: "預見旅圖",
         street: "台灣台中市XX區XX路XX號",
         detail: "(請來電確認地址)",
       },
@@ -116,7 +123,7 @@ const TRANSLATIONS = {
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640!2d120.68!3d24.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzI0LjAiTiAxMjDCsDQwJzQ4LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1",
     },
     footer: {
-      tagline: "預見未來，耕耘愛的種子 — 專業兒童物理治療",
+      tagline: "預見專業，圖繪旅程 — 專業兒童物理治療與輔具設計",
       nav: "導航",
       contactTitle: "聯絡資訊",
       rights: "版權所有",
@@ -147,9 +154,9 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "Pediatric Physiotherapy",
-      headline: "Foresee the Future",
-      headlineAccent: "Cultivate Seeds of Love",
-      subtext: "Specialized physiotherapy designed for children, combining professional techniques with warm care to support every child's healthy growth.",
+      headline: "Foresee the Path",
+      headlineAccent: "Map the Journey",
+      subtext: "Specialized physiotherapy designed for children, combining professional expertise with warm care — from the clinic to the outdoors, supporting every child's journey of exploration.",
       ctaPrimary: "Book Consultation",
       ctaSecondary: "Learn More",
     },
@@ -203,15 +210,22 @@ const TRANSLATIONS = {
           { q: "Are the orthotics waterproof?", a: "Our 3D printing materials are water-resistant. Normal water contact won't affect function, though prolonged soaking should be avoided." },
         ],
       },
+      quote: "\"We're not just making an assistive device — we're helping children reclaim the 'agency' that was always theirs. This extra bit of support is their starting point for exploring the world.\"",
       cta: "Book Orthotic Consultation",
     },
     about: {
       label: "About Us",
-      title: "Foresee Physiotherapy Clinic",
-      story: "Foresee Physiotherapy Clinic upholds the philosophy of 'Foresee the Future, Cultivate Seeds of Love,' dedicated to providing every child with the most professional and warm physiotherapy services. We believe every child has unlimited potential, and through early intervention and continuous professional support, we can help them shine their brightest.",
+      title: "Foresee Journey",
+      tagline: "Foresee Expertise, Map the Journey.",
+      intro: "Foresee Journey was born from our deep belief that every child deserves the right to explore the world.",
+      foreseeTitle: "\"Foresee\"",
+      foreseeText: "With years of rich clinical experience in physical therapy, we have developed a keen eye for observing developmental needs. We see not only current limitations, but also each child's future potential. We transform this expertise into the warmest tangible support, realized in every assistive device and recommendation.",
+      journeyTitle: "\"Journey\"",
+      journeyText: "Rehabilitation shouldn't be confined to the clinic. Through inclusive activities and occupational experiences, we turn rehabilitation goals into life practice, planning pathways from the clinic to the outdoors and into society, letting growth happen through real exploration.",
+      story: "We don't just make assistive devices — we help families draw blueprints toward hope. We turn expertise into the most stable support, so children can stand on the shoulders of professionals and foresee a broader, more expansive future.",
       story2: "Our therapy team combines traditional physiotherapy techniques with innovative technology, including our self-developed 3D printed custom orthotics, providing comprehensive treatment solutions for children. Here, every therapy session is filled with laughter and love.",
       mission: "Our Mission",
-      missionText: "To accompany every child on a healthy and happy growth path with professional physiotherapy, warm care, and innovative assistive technology.",
+      missionText: "To accompany every child from the clinic to the outdoors and into society with professional physiotherapy, warm care, and innovative assistive technology — on a healthy and happy growth path.",
       therapist: {
         name: "Ya-Hui Huang, PT",
         role: "Founder / Physiotherapist",
@@ -229,7 +243,7 @@ const TRANSLATIONS = {
       subtitle: "Reach out through any of the channels below. We'll respond as soon as possible.",
       email: "1985yahui@gmail.com",
       address: {
-        name: "Foresee Physiotherapy Clinic",
+        name: "Foresee Journey",
         street: "XX Road, XX District, Taichung, Taiwan",
         detail: "(Please call to confirm address)",
       },
@@ -239,7 +253,7 @@ const TRANSLATIONS = {
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640!2d120.68!3d24.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzI0LjAiTiAxMjDCsDQwJzQ4LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1",
     },
     footer: {
-      tagline: "Foresee the Future, Cultivate Seeds of Love — Pediatric Physiotherapy",
+      tagline: "Foresee Expertise, Map the Journey — Pediatric Physiotherapy & Custom Orthotics",
       nav: "Navigation",
       contactTitle: "Contact",
       rights: "All rights reserved",
@@ -264,21 +278,21 @@ const TRANSLATIONS = {
    COLORS & GLOBAL STYLES
    ═══════════════════════════════════════════════════════════════════════ */
 const C = {
-  primary: "#7FB5D3",
-  primaryLight: "#A8D0E6",
-  primaryDark: "#5A96B8",
-  accent: "#F6C94E",
-  accentHover: "#E8B93A",
-  secondary: "#F4A7B9",
-  bg: "#FFFBF5",
-  bgAlt: "#FFF5EC",
-  bgDark: "#2C3E50",
+  primary: "#5BAF8A",
+  primaryLight: "#8DCBAA",
+  primaryDark: "#3D8A6A",
+  accent: "#E8C84A",
+  accentHover: "#D4B53E",
+  secondary: "#7BBAD4",
+  bg: "#FAF7F2",
+  bgAlt: "#F5F0E8",
+  bgDark: "#2E4A3E",
   text: "#3A3A3A",
   textMuted: "#7A7A7A",
   textLight: "#A0A0A0",
   cardBg: "#FFFFFF",
-  border: "#F0E6D8",
-  borderLight: "#F8F0E6",
+  border: "#E8DFD0",
+  borderLight: "#F2EBDF",
 };
 
 const GLOBAL_STYLES = `
@@ -322,7 +336,7 @@ const GLOBAL_STYLES = `
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 32px rgba(127, 181, 211, 0.08), inset 0 1px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 8px 32px rgba(91, 175, 138, 0.08), inset 0 1px 1px rgba(255,255,255,0.9);
   }
 `;
 
@@ -614,7 +628,7 @@ function ParticleCanvas() {
     window.addEventListener("mousemove", onMouse);
 
     let animId;
-    const colors = [`rgba(127,181,211,`, `rgba(246,201,78,`, `rgba(244,167,185,`];
+    const colors = [`rgba(91,175,138,`, `rgba(232,200,74,`, `rgba(123,186,212,`];
     const render = () => {
       const w = parseFloat(canvas.style.width), h = parseFloat(canvas.style.height);
       ctx.clearRect(0, 0, w, h);
@@ -697,17 +711,17 @@ function Navbar({ currentPage, t, lang, setLang }) {
       <motion.nav role="navigation" initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: EASE }}
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: navBg ? "rgba(255,251,245,0.95)" : "transparent",
+          background: navBg ? "rgba(250,247,242,0.95)" : "transparent",
           backdropFilter: navBg ? "blur(16px)" : "none",
           borderBottom: navBg ? `1px solid ${C.border}` : "1px solid transparent",
           padding: scrolled ? "0.5rem 0" : "0.8rem 0",
         }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 no-underline" onClick={(e) => { e.preventDefault(); navigate("home"); }}>
-            <img src="/images/logo.png" alt="Foresee PT" style={{ height: "38px", objectFit: "contain" }} />
+            <img src="/images/foresee-logo.jpeg" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain", borderRadius: "6px" }} />
             <span className="font-heading text-lg font-bold tracking-tight hidden sm:block"
               style={{ color: navBg ? C.text : (isHome ? "#fff" : C.text) }}>
-              {lang === "zh" ? "預見物理治療所" : "Foresee PT"}
+              {lang === "zh" ? "預見旅圖" : "Foresee Journey"}
             </span>
           </a>
 
@@ -1043,6 +1057,20 @@ function ProductPage({ t }) {
 
       <WaveDivider color={C.bg} />
 
+      {/* Inspirational Quote */}
+      <section className="py-16 sm:py-20" style={{ background: `linear-gradient(135deg, ${C.primary}08, ${C.accent}06)` }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <Reveal>
+            <div className="relative">
+              <span className="font-heading text-6xl sm:text-7xl absolute -top-6 left-1/2 -translate-x-1/2 opacity-10" style={{ color: C.primaryDark }}>&ldquo;</span>
+              <p className="font-heading text-xl sm:text-2xl lg:text-[1.65rem] font-medium leading-[2] relative z-10 pt-4" style={{ color: C.primaryDark }}>
+                {t.product.quote}
+              </p>
+            </div>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Features */}
       <section className="py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-6xl mx-auto px-5 lg:px-8">
@@ -1159,7 +1187,49 @@ function AboutPage({ t }) {
   return (
     <>
       <PageHero title={a.title} t={t} />
-      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
+
+      {/* Brand Tagline & Intro */}
+      <section className="py-16 sm:py-20 lg:py-24" style={{ background: C.bg }}>
+        <div className="max-w-4xl mx-auto px-5 lg:px-8 text-center">
+          <Reveal>
+            <h2 className="font-heading text-3xl sm:text-4xl lg:text-5xl font-bold tracking-tight mb-6" style={{ color: C.primaryDark }}>{a.tagline}</h2>
+          </Reveal>
+          <Reveal delay={0.1}>
+            <p className="text-lg sm:text-xl leading-[2] max-w-2xl mx-auto mb-0" style={{ color: C.text }}>{a.intro}</p>
+          </Reveal>
+        </div>
+      </section>
+
+      {/* Brand Meaning: 預見 + 旅圖 */}
+      <section className="py-16 sm:py-20 lg:py-24" style={{ background: C.bgAlt }}>
+        <div className="max-w-5xl mx-auto px-5 lg:px-8">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-8 lg:gap-12">
+            <ScrollReveal>
+              <div className="p-8 sm:p-10 rounded-3xl h-full" style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                  style={{ background: `linear-gradient(135deg, ${C.primary}15, ${C.accent}15)`, color: C.primaryDark }}>
+                  <Star size={28} />
+                </div>
+                <h3 className="font-heading text-2xl font-bold mb-4" style={{ color: C.primaryDark }}>{a.foreseeTitle}</h3>
+                <p className="text-[0.95rem] leading-[2]" style={{ color: C.textMuted }}>{a.foreseeText}</p>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+              <div className="p-8 sm:p-10 rounded-3xl h-full" style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
+                <div className="w-14 h-14 rounded-2xl flex items-center justify-center mb-6"
+                  style={{ background: `linear-gradient(135deg, ${C.accent}15, ${C.secondary}15)`, color: C.accent }}>
+                  <MapPin size={28} />
+                </div>
+                <h3 className="font-heading text-2xl font-bold mb-4" style={{ color: C.primaryDark }}>{a.journeyTitle}</h3>
+                <p className="text-[0.95rem] leading-[2]" style={{ color: C.textMuted }}>{a.journeyText}</p>
+              </div>
+            </ScrollReveal>
+          </div>
+        </div>
+      </section>
+
+      {/* Story & Mission */}
+      <section className="py-16 sm:py-20 lg:py-24" style={{ background: C.bg }}>
         <div className="max-w-4xl mx-auto px-5 lg:px-8">
           <Reveal><p className="text-lg leading-[2] mb-6" style={{ color: C.text }}>{a.story}</p></Reveal>
           <Reveal delay={0.15}><p className="text-lg leading-[2] mb-10" style={{ color: C.text }}>{a.story2}</p></Reveal>
@@ -1227,7 +1297,7 @@ function ContactPage({ t }) {
             {[
               { href: `https://line.me/R/ti/p/${c.line}`, icon: <LineIcon size={22} />, title: "LINE", sub: c.line, bg: "#06C75512", color: "#06C755", external: true },
               { href: `mailto:${c.email}`, icon: <Mail size={22} />, title: c.email, sub: null, bg: `${C.primary}12`, color: C.primaryDark },
-              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見x物理治療", bg: "#1877F212", color: "#1877F2", external: true },
+              { href: c.facebook, icon: <Facebook size={22} />, title: "Facebook", sub: "預見旅圖", bg: "#1877F212", color: "#1877F2", external: true },
             ].map((item, i) => (
               <ScrollReveal key={i} delay={i * 0.08}>
                 <a href={item.href} target={item.external ? "_blank" : undefined} rel={item.external ? "noopener noreferrer" : undefined}
@@ -1263,8 +1333,8 @@ function Footer({ t, lang }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-10">
           <div className="sm:col-span-2 lg:col-span-2">
             <a href="#home" onClick={(e) => { e.preventDefault(); navigate("home"); }} className="inline-flex items-center gap-2 mb-4 no-underline">
-              <img src="/images/logo.png" alt="Foresee PT" style={{ height: "38px", objectFit: "contain" }} />
-              <span className="font-heading text-lg font-bold text-white">{lang === "zh" ? "預見物理治療所" : "Foresee PT"}</span>
+              <img src="/images/foresee-logo.jpeg" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain", borderRadius: "6px" }} />
+              <span className="font-heading text-lg font-bold text-white">{lang === "zh" ? "預見旅圖" : "Foresee Journey"}</span>
             </a>
             <p className="text-sm text-white/40 leading-relaxed max-w-xs mb-6">{t.footer.tagline}</p>
             <div className="flex gap-3">
@@ -1289,7 +1359,7 @@ function Footer({ t, lang }) {
           </div>
         </div>
         <div className="border-t border-white/[0.06] pt-6 flex flex-col sm:flex-row justify-between gap-4">
-          <p className="text-xs text-white/20">&copy; {year} {lang === "zh" ? "預見物理治療所" : "Foresee Physiotherapy Clinic"}. {t.footer.rights}.</p>
+          <p className="text-xs text-white/20">&copy; {year} {lang === "zh" ? "預見旅圖" : "Foresee Journey"}. {t.footer.rights}.</p>
           <div className="flex gap-6">
             <a href="#" className="text-xs text-white/20 hover:text-white/40 transition-colors no-underline">{t.footer.privacy}</a>
             <a href="#" className="text-xs text-white/20 hover:text-white/40 transition-colors no-underline">{t.footer.terms}</a>
@@ -1354,7 +1424,7 @@ function CookieBanner({ t }) {
    ═══════════════════════════════════════════════════════════════════════ */
 function useSEO(page, lang) {
   useEffect(() => {
-    const n = lang === "zh" ? "預見物理治療所" : "Foresee Physiotherapy";
+    const n = lang === "zh" ? "預見旅圖" : "Foresee Journey";
     const map = {
       home: { title: `${n} — ${lang === "zh" ? "兒童物理治療" : "Pediatric PT"}`, desc: lang === "zh" ? "專為兒童設計的物理治療服務" : "Specialized physiotherapy for children" },
       services: { title: `${lang === "zh" ? "服務" : "Services"} — ${n}` }, product: { title: `${lang === "zh" ? "3D副木" : "3D Orthotics"} — ${n}` },
