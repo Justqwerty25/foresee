@@ -919,9 +919,10 @@ function HomePage({ t }) {
               </div>
               <div className="absolute -top-10 -right-10 w-40 h-40 rounded-full opacity-20" style={{ background: C.accent, filter: "blur(60px)" }} />
               <div className="absolute -bottom-10 -left-10 w-40 h-40 rounded-full opacity-20" style={{ background: C.primary, filter: "blur(60px)" }} />
-              <div className="absolute top-1/2 -right-6 -translate-y-1/2 p-5 rounded-2xl warm-glass z-20 shadow-xl hidden sm:block">
-                <div className="flex items-center gap-4">
-                  <div className="w-10 h-10 rounded-full bg-green-500/10 text-green-600 flex items-center justify-center"><CheckCircle2 size={20} /></div>
+              <div className="absolute bottom-8 left-1/2 -translate-x-1/2 p-4 sm:p-5 rounded-2xl z-20 shadow-xl hidden sm:block"
+                style={{ background: "rgba(255,255,255,0.85)", backdropFilter: "blur(12px)", border: `1px solid ${C.borderLight}` }}>
+                <div className="flex items-center gap-3">
+                  <div className="w-10 h-10 rounded-full flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}><CheckCircle2 size={20} /></div>
                   <div>
                     <div className="text-xs font-bold" style={{ color: C.text }}>Professional Care</div>
                     <div className="text-[10px]" style={{ color: C.textMuted }}>Tailored to your child</div>
