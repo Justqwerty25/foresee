@@ -17,6 +17,7 @@ const TRANSLATIONS = {
       home: "首頁",
       services: "服務項目",
       product: "3D副木",
+      workshops: "講座活動",
       about: "關於我們",
       contact: "聯絡我們",
       cta: "立即預約",
@@ -24,7 +25,7 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "兒童物理治療專家",
-      headline: "預見專業",
+      headline: "預見專業，",
       headlineAccent: "圖繪旅程",
       subtext: "專為兒童設計的物理治療服務，結合專業技術與溫暖關懷，從診間到戶外，陪伴每一位孩子探索世界。",
       ctaPrimary: "預約諮詢",
@@ -48,7 +49,6 @@ const TRANSLATIONS = {
         { icon: "Hand", title: "手部精細動作", desc: "專注於手部功能訓練，包括抓握、操作和書寫等精細動作技巧的提升。", features: ["抓握與操作訓練", "手眼協調活動", "書寫前備技巧"] },
         { icon: "PersonStanding", title: "姿勢訓練", desc: "矯正不良姿勢習慣，建立正確的身體排列，預防日後骨骼肌肉問題。", features: ["姿勢評估與矯正", "核心穩定訓練", "人體工學指導"] },
         { icon: "HandHelping", title: "家長諮詢", desc: "提供家長專業的居家訓練指導，讓治療效果延伸至日常生活中。", features: ["居家活動指導", "環境調整建議", "發展階段諮詢"] },
-        { icon: "Brain", title: "公開演講", desc: "分享兒童物理治療的最新知識和臨床經驗，為家長和專業人士提供教育性的演講和工作坊。", features: ["發展里程碑講座", "家長教育工作坊", "專業培訓課程"] },
       ],
     },
     product: {
@@ -82,6 +82,19 @@ const TRANSLATIONS = {
       },
       quote: "「我們不只是在做一個輔具，我們是在幫孩子找回他原本就有的『主動權』。這多出來的一點協助，就是他探索世界的起點。」",
       cta: "預約副木諮詢",
+    },
+    workshops: {
+      label: "講座與活動",
+      title: "工作坊與演講",
+      subtitle: "將專業知識帶出診間，透過講座、工作坊與共融活動，讓更多家庭與專業人士受益。",
+      heroQuote: "我們相信知識的力量，應該被分享、被傳遞、被實踐。",
+      sections: [
+        { title: "專業講座", desc: "分享兒童物理治療的最新知識和臨床經驗，為家長和專業人士提供教育性的演講。", features: ["發展里程碑講座", "家長教育工作坊", "專業培訓課程", "輔具科技新知分享"] },
+        { title: "共融活動", desc: "透過舉辦各式共融活動與職能體驗，將復健目標化為生活練習，讓成長在探索中真實發生。", features: ["親子互動活動", "戶外探索體驗", "職能體驗工作坊", "社區共融計畫"] },
+        { title: "專業培訓", desc: "為物理治療師、職能治療師及相關專業人士提供進階培訓，分享3D列印輔具製作技術與臨床應用。", features: ["3D列印輔具技術培訓", "臨床案例分析", "跨領域合作工作坊", "實務操作演練"] },
+      ],
+      cta: "預約講座諮詢",
+      ctaSubtext: "歡迎學校、機構或團體預約客製化講座與工作坊",
     },
     about: {
       label: "關於我們",
@@ -147,6 +160,7 @@ const TRANSLATIONS = {
       home: "Home",
       services: "Services",
       product: "3D Orthotics",
+      workshops: "Workshops",
       about: "About",
       contact: "Contact",
       cta: "Book Now",
@@ -154,7 +168,7 @@ const TRANSLATIONS = {
     },
     hero: {
       badge: "Pediatric Physiotherapy",
-      headline: "Foresee the Path",
+      headline: "Foresee the Path,",
       headlineAccent: "Map the Journey",
       subtext: "Specialized physiotherapy designed for children, combining professional expertise with warm care — from the clinic to the outdoors, supporting every child's journey of exploration.",
       ctaPrimary: "Book Consultation",
@@ -178,7 +192,6 @@ const TRANSLATIONS = {
         { icon: "Hand", title: "Fine Motor Skills", desc: "Focused on hand function training, including grasping, manipulation, and writing skill improvement.", features: ["Grasp & manipulation", "Hand-eye coordination", "Pre-writing skills"] },
         { icon: "PersonStanding", title: "Posture Training", desc: "Correcting poor posture habits, establishing proper body alignment, preventing future musculoskeletal issues.", features: ["Posture assessment", "Core stability training", "Ergonomic guidance"] },
         { icon: "HandHelping", title: "Parent Consultation", desc: "Professional home training guidance for parents, extending therapy benefits into daily life.", features: ["Home activity guidance", "Environment modification", "Developmental counseling"] },
-        { icon: "Brain", title: "Public Speaking", desc: "Share the latest knowledge and clinical experience in pediatric physiotherapy through educational lectures and workshops for parents and professionals.", features: ["Developmental milestone seminars", "Parent education workshops", "Professional training courses"] },
       ],
     },
     product: {
@@ -212,6 +225,19 @@ const TRANSLATIONS = {
       },
       quote: "\"We're not just making an assistive device — we're helping children reclaim the 'agency' that was always theirs. This extra bit of support is their starting point for exploring the world.\"",
       cta: "Book Orthotic Consultation",
+    },
+    workshops: {
+      label: "Workshops & Events",
+      title: "Workshops & Speaking",
+      subtitle: "Bringing professional knowledge beyond the clinic through lectures, workshops, and inclusive activities for families and professionals.",
+      heroQuote: "We believe the power of knowledge should be shared, passed on, and put into practice.",
+      sections: [
+        { title: "Professional Lectures", desc: "Sharing the latest knowledge and clinical experience in pediatric physiotherapy through educational lectures for parents and professionals.", features: ["Developmental milestone seminars", "Parent education workshops", "Professional training courses", "Assistive technology updates"] },
+        { title: "Inclusive Activities", desc: "Through inclusive activities and occupational experiences, we turn rehabilitation goals into life practice, letting growth happen through real exploration.", features: ["Parent-child interactive events", "Outdoor exploration experiences", "Occupational experience workshops", "Community inclusion programs"] },
+        { title: "Professional Training", desc: "Advanced training for physiotherapists, occupational therapists, and related professionals on 3D printed orthotic fabrication and clinical applications.", features: ["3D printed orthotic training", "Clinical case analysis", "Interdisciplinary workshops", "Hands-on practice sessions"] },
+      ],
+      cta: "Book a Workshop",
+      ctaSubtext: "Schools, institutions, and groups are welcome to book customized lectures and workshops",
     },
     about: {
       label: "About Us",
@@ -702,6 +728,7 @@ function Navbar({ currentPage, t, lang, setLang }) {
   const links = [
     { label: t.nav.services, href: "services" },
     { label: t.nav.product, href: "product" },
+    { label: t.nav.workshops, href: "workshops" },
     { label: t.nav.about, href: "about" },
     { label: t.nav.contact, href: "contact" },
   ];
@@ -842,10 +869,10 @@ function HomePage({ t }) {
               <Heart size={14} /> {t.hero.badge}
             </motion.div>
 
-            <h1 className="font-heading text-4xl sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.08] tracking-tight mb-5">
-              <BlurText text={t.hero.headline} />
+            <h1 className="font-heading text-[2.2rem] sm:text-5xl md:text-6xl lg:text-7xl xl:text-8xl font-bold text-white leading-[1.15] tracking-tight mb-5">
+              <span className="whitespace-nowrap"><BlurText text={t.hero.headline} /></span>
               <br />
-              <BlurText text={t.hero.headlineAccent} style={{ color: C.accent }} />
+              <span className="whitespace-nowrap" style={{ color: C.accent }}><BlurText text={t.hero.headlineAccent} /></span>
             </h1>
 
             <motion.p initial={{ opacity: 0, y: 20 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.7, ease: EASE, delay: 0.6 }}
@@ -1095,40 +1122,85 @@ function ProductPage({ t }) {
         </div>
       </section>
 
-      {/* Product Gallery */}
+      {/* 3D Tech Showcase */}
       <section className="py-20 lg:py-28" style={{ background: C.bgAlt }}>
         <div className="max-w-6xl mx-auto px-5 lg:px-8">
-          <SectionHeading title={t.nav.home === "首頁" ? "產品展示" : "Product Gallery"} />
-          <div className="grid grid-cols-2 lg:grid-cols-3 gap-4 lg:gap-6">
+          <SectionHeading
+            label={t.nav.home === "首頁" ? "3D 科技展示" : "3D Tech Showcase"}
+            title={t.nav.home === "首頁" ? "從掃描到成品" : "From Scan to Finished Product"}
+            subtitle={t.nav.home === "首頁" ? "運用先進3D列印技術，每一件輔具都是獨一無二的客製化作品。" : "Using advanced 3D printing technology, every orthotic is a unique custom creation."} />
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-4 lg:gap-6">
+            {/* Row 1: 3D Model + Render */}
             <ScrollReveal className="col-span-2 lg:col-span-2 row-span-2">
-              <div className="rounded-2xl lg:rounded-3xl overflow-hidden h-full shadow-lg group" style={{ border: `1px solid ${C.border}` }}>
-                <ProductImage src="/images/packshot-trio.jpg" alt="快樂孩子使用副木" iconFallback={Hand}
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden h-full shadow-lg group relative" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/3d-model-screen.jpeg" alt="3D數位建模" iconFallback={Printer}
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105" style={{ minHeight: "280px" }} />
+                <div className="absolute bottom-0 left-0 right-0 p-4 bg-gradient-to-t from-black/60 to-transparent">
+                  <span className="text-white text-xs font-semibold px-3 py-1 rounded-full" style={{ background: `${C.primary}cc` }}>
+                    {t.nav.home === "首頁" ? "數位建模" : "Digital Modeling"}
+                  </span>
+                </div>
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.1}>
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square relative" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/3d-render-red.jpeg" alt="3D渲染設計" iconFallback={Sparkles}
+                  className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                  <span className="text-white text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ background: `${C.accent}cc` }}>
+                    {t.nav.home === "首頁" ? "3D渲染" : "3D Render"}
+                  </span>
+                </div>
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.2}>
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square relative" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/3d-hand-green.jpeg" alt="綠色副木成品" iconFallback={Hand}
+                  className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
+                <div className="absolute bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-black/60 to-transparent">
+                  <span className="text-white text-[10px] font-semibold px-2 py-0.5 rounded-full" style={{ background: `${C.primary}cc` }}>
+                    {t.nav.home === "首頁" ? "列印成品" : "3D Printed"}
+                  </span>
+                </div>
+              </div>
+            </ScrollReveal>
+            {/* Row 2: Real products */}
+            <ScrollReveal delay={0.1}>
               <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square" style={{ border: `1px solid ${C.border}` }}>
-                <ProductImage src="/images/detail-structure.jpg" alt="多彩副木展示" iconFallback={Sparkles}
+                <ProductImage src="/images/3d-hand-orange.jpeg" alt="橘色兒童副木" iconFallback={Hand}
+                  className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
+              </div>
+            </ScrollReveal>
+            <ScrollReveal delay={0.15}>
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/3d-hand-yellow-pair.jpeg" alt="黃色副木對" iconFallback={Hand}
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
               </div>
             </ScrollReveal>
             <ScrollReveal delay={0.2}>
               <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square" style={{ border: `1px solid ${C.border}` }}>
-                <ProductImage src="/images/packshot-yellow-pair.jpg" alt="嬰兒配戴副木" iconFallback={Baby}
+                <ProductImage src="/images/3d-hand-black-worn.jpeg" alt="黑色副木配戴" iconFallback={Hand}
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
               </div>
             </ScrollReveal>
-            <ScrollReveal delay={0.15} className="col-span-2 lg:col-span-1">
-              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-video lg:aspect-auto lg:h-full" style={{ border: `1px solid ${C.border}` }}>
-                <ProductImage src="/images/product-blue.jpg" alt="藍色副木" iconFallback={Hand}
-                  className="w-full h-full transition-transform duration-700 group-hover:scale-105" style={{ minHeight: "200px" }} />
-              </div>
-            </ScrollReveal>
-            <ScrollReveal delay={0.2} className="col-span-2">
-              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-video" style={{ border: `1px solid ${C.border}` }}>
-                <ProductImage src="/images/product-3dmodel.jpg" alt="3D設計模型" iconFallback={Hand}
+            <ScrollReveal delay={0.25}>
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg group aspect-square" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/fitting-child.jpeg" alt="專業試戴" iconFallback={Baby}
                   className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
               </div>
+            </ScrollReveal>
+          </div>
+
+          {/* Before & After / Process strip */}
+          <div className="mt-10">
+            <ScrollReveal>
+              <div className="rounded-2xl lg:rounded-3xl overflow-hidden shadow-lg" style={{ border: `1px solid ${C.border}` }}>
+                <ProductImage src="/images/3d-hand-collage.jpeg" alt="3D副木製作過程 - 從掃描到試戴"
+                  iconFallback={Hand} className="w-full" style={{ maxHeight: "400px" }} />
+              </div>
+              <p className="text-center text-sm mt-4" style={{ color: C.textMuted }}>
+                {t.nav.home === "首頁" ? "從設計、列印到試戴 — 每一步都精準客製" : "From design to print to fitting — every step precisely customized"}
+              </p>
             </ScrollReveal>
           </div>
         </div>
@@ -1174,6 +1246,103 @@ function ProductPage({ t }) {
               </ScrollReveal>
             ))}
           </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   WORKSHOPS & SPEAKING PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+function WorkshopsPage({ t }) {
+  const w = t.workshops;
+  const workshopIcons = [Brain, Users, Award];
+  return (
+    <>
+      {/* Hero with background image */}
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${C.bgDark} 0%, ${C.primaryDark} 50%, ${C.bgDark} 100%)` }}>
+        <div className="absolute inset-0 opacity-20"
+          style={{ backgroundImage: "url(/images/blog-presentatie.jpg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.4)" }} />
+        <DecorativeStars count={8} />
+        <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
+          <a href="#home" onClick={(e) => { e.preventDefault(); navigate("home"); }}
+            className="inline-flex items-center gap-2 text-white/50 text-sm font-medium no-underline hover:text-white/80 transition-colors mb-8">
+            <ArrowLeft size={16} /> {t.common.backToHome}
+          </a>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: EASE }} className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase mb-6"
+              style={{ background: `${C.accent}20`, color: C.accent, border: `1px solid ${C.accent}30` }}>
+              <Brain size={12} /> {w.label}
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-5">{w.title}</h1>
+            <p className="text-base lg:text-lg text-white/60 max-w-lg leading-relaxed mb-6">{w.subtitle}</p>
+            <p className="font-heading text-lg sm:text-xl text-white/80 italic leading-relaxed">{w.heroQuote}</p>
+          </motion.div>
+        </div>
+      </section>
+
+      <WaveDivider color={C.bg} />
+
+      {/* Workshop Sections */}
+      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
+            {w.sections.map((section, i) => {
+              const IconComp = workshopIcons[i] || Brain;
+              return (
+                <ScrollReveal key={i}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
+                    <div className="lg:[direction:ltr]">
+                      <div className="rounded-3xl overflow-hidden aspect-[4/3] relative"
+                        style={{ border: `1px solid ${C.primary}25` }}>
+                        <ProductImage
+                          src={["/images/blog-presentatie.jpg", "/images/fitting-child.jpeg", "/images/3d-hand-collage.jpeg"][i]}
+                          alt={section.title}
+                          iconFallback={IconComp}
+                          className="w-full h-full"
+                        />
+                      </div>
+                    </div>
+                    <div className="lg:[direction:ltr]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                          <IconComp size={24} />
+                        </div>
+                        <h3 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: C.text }}>{section.title}</h3>
+                      </div>
+                      <p className="text-[0.95rem] leading-relaxed mb-6" style={{ color: C.textMuted }}>{section.desc}</p>
+                      <ul className="space-y-3 mb-6">
+                        {section.features.map((f, fi) => (
+                          <li key={fi} className="flex items-center gap-3 text-[0.95rem]" style={{ color: C.text }}>
+                            <CheckCircle2 size={18} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      {/* CTA */}
+      <section className="py-16 sm:py-20" style={{ background: C.bgAlt }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <ScrollReveal>
+            <div className="p-10 sm:p-14 rounded-3xl" style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-4 tracking-tight">{w.cta}</h2>
+              <p className="text-sm text-white/50 mb-8">{w.ctaSubtext}</p>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:scale-[1.03]"
+                style={{ background: C.accent, color: C.bgDark }}>
+                <Phone size={18} /> {w.cta}
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>
@@ -1326,7 +1495,7 @@ function Footer({ t, lang }) {
   const year = new Date().getFullYear();
   const links = [
     { label: t.nav.home, href: "home" }, { label: t.nav.services, href: "services" },
-    { label: t.nav.product, href: "product" }, { label: t.nav.about, href: "about" }, { label: t.nav.contact, href: "contact" },
+    { label: t.nav.product, href: "product" }, { label: t.nav.workshops, href: "workshops" }, { label: t.nav.about, href: "about" }, { label: t.nav.contact, href: "contact" },
   ];
   return (
     <footer style={{ background: C.bgDark }}>
@@ -1374,7 +1543,7 @@ function Footer({ t, lang }) {
 /* ═══════════════════════════════════════════════════════════════════════
    FLOATING LINE BUTTON
    ═══════════════════════════════════════════════════════════════════════ */
-function FloatingLine({ t }) {
+function FloatingLine({ t, lang }) {
   const [visible, setVisible] = useState(false);
   useEffect(() => {
     const onScroll = () => setVisible(window.scrollY > 400);
@@ -1384,13 +1553,36 @@ function FloatingLine({ t }) {
   return (
     <AnimatePresence>
       {visible && (
-        <motion.a href={`https://line.me/R/ti/p/${t.contact.line}`} target="_blank" rel="noopener noreferrer"
-          initial={{ opacity: 0, scale: 0.5, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.5, y: 20 }}
-          transition={{ duration: 0.4, ease: EASE }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}
-          className="fixed bottom-4 right-4 sm:bottom-6 sm:right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center text-white shadow-2xl no-underline"
-          style={{ background: "#06C755" }} title="LINE">
-          <LineIcon size={28} />
-        </motion.a>
+        <>
+          {/* Desktop: floating LINE button */}
+          <motion.a href={`https://line.me/R/ti/p/${t.contact.line}`} target="_blank" rel="noopener noreferrer"
+            initial={{ opacity: 0, scale: 0.5, y: 20 }} animate={{ opacity: 1, scale: 1, y: 0 }} exit={{ opacity: 0, scale: 0.5, y: 20 }}
+            transition={{ duration: 0.4, ease: EASE }} whileHover={{ scale: 1.1 }} whileTap={{ scale: 0.95 }}
+            className="fixed bottom-20 sm:bottom-6 right-4 sm:right-6 z-50 w-14 h-14 rounded-full flex items-center justify-center text-white shadow-2xl no-underline hidden sm:flex"
+            style={{ background: "#06C755" }} title="LINE">
+            <LineIcon size={28} />
+          </motion.a>
+
+          {/* Mobile: sticky bottom CTA bar */}
+          <motion.div
+            initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }}
+            transition={{ duration: 0.4, ease: EASE }}
+            className="fixed bottom-0 left-0 right-0 z-50 sm:hidden"
+            style={{ background: "rgba(250,247,242,0.95)", backdropFilter: "blur(16px)", borderTop: `1px solid ${C.border}`, padding: "0.6rem 1rem" }}>
+            <div className="flex items-center gap-2">
+              <a href={`https://line.me/R/ti/p/${t.contact.line}`} target="_blank" rel="noopener noreferrer"
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl text-white text-sm font-bold no-underline"
+                style={{ background: "#06C755" }}>
+                <LineIcon size={18} /> LINE
+              </a>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                className="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl text-white text-sm font-bold no-underline"
+                style={{ background: `linear-gradient(135deg, ${C.primary}, ${C.primaryDark})` }}>
+                <Phone size={16} /> {lang === "zh" ? "立即預約" : "Book Now"}
+              </a>
+            </div>
+          </motion.div>
+        </>
       )}
     </AnimatePresence>
   );
@@ -1429,6 +1621,7 @@ function useSEO(page, lang) {
     const map = {
       home: { title: `${n} — ${lang === "zh" ? "兒童物理治療" : "Pediatric PT"}`, desc: lang === "zh" ? "專為兒童設計的物理治療服務" : "Specialized physiotherapy for children" },
       services: { title: `${lang === "zh" ? "服務" : "Services"} — ${n}` }, product: { title: `${lang === "zh" ? "3D副木" : "3D Orthotics"} — ${n}` },
+      workshops: { title: `${lang === "zh" ? "講座活動" : "Workshops"} — ${n}` },
       about: { title: `${lang === "zh" ? "關於" : "About"} — ${n}` }, contact: { title: `${lang === "zh" ? "聯絡" : "Contact"} — ${n}` },
     };
     const seo = map[page] || map.home;
@@ -1464,6 +1657,7 @@ export default function App() {
     switch (currentPage) {
       case "services": return <ServicesPage t={t} />;
       case "product": return <ProductPage t={t} />;
+      case "workshops": return <WorkshopsPage t={t} />;
       case "about": return <AboutPage t={t} />;
       case "contact": return <ContactPage t={t} />;
       default: return <HomePage t={t} />;
@@ -1481,7 +1675,7 @@ export default function App() {
         </AnimatePresence>
       </main>
       <Footer t={t} lang={lang} />
-      <FloatingLine t={t} />
+      <FloatingLine t={t} lang={lang} />
       <CookieBanner t={t} />
     </div>
   );
