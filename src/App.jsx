@@ -16,17 +16,17 @@ const TRANSLATIONS = {
     nav: {
       home: "首頁",
       services: "服務項目",
-      product: "3D副木",
+      product: "3D客製化輔具",
       workshops: "講座活動",
-      about: "關於我們",
+      about: "品牌介紹",
       contact: "聯絡我們",
       cta: "立即預約",
       langToggle: "EN",
     },
     hero: {
       badge: "兒童物理治療專家",
-      headline: "預見專業，",
-      headlineAccent: "圖繪旅程",
+      headline: "讓專業成為支撐，",
+      headlineAccent: "陪孩子預見未來的旅圖。",
       subtext: "專為兒童設計的物理治療服務，結合專業技術與溫暖關懷，從診間到戶外，陪伴每一位孩子探索世界。",
       ctaPrimary: "預約諮詢",
       ctaSecondary: "了解更多",
@@ -53,8 +53,9 @@ const TRANSLATIONS = {
     },
     product: {
       label: "創新產品",
-      title: "3D列印客製化副木",
+      title: "3D客製化輔具",
       subtitle: "運用先進3D列印技術，為每位孩子量身打造最合適的手部輔具。",
+      missionSlogan: "我們不只製作輔具，更是在陪伴家庭繪製通往希望的藍圖。我們將專業化為最穩定的支撐，讓孩子能站在專業的肩膀上，預見更遙遠、更寬廣的未來。",
       badge: "專利技術",
       features: [
         { icon: "ScanLine", title: "完全客製化", desc: "根據孩子手部3D掃描數據，精準設計完美貼合的副木。" },
@@ -97,8 +98,8 @@ const TRANSLATIONS = {
       ctaSubtext: "歡迎學校、機構或團體預約客製化講座與工作坊",
     },
     about: {
-      label: "關於我們",
-      title: "預見旅圖",
+      label: "品牌介紹",
+      title: "預見旅圖 Foresee Journey",
       tagline: "預見專業，圖繪旅程。",
       intro: "「預見旅圖」的誕生，源於我們深信每一位孩子，都應擁有探索世界的權利。",
       foreseeTitle: "「預見」",
@@ -136,7 +137,7 @@ const TRANSLATIONS = {
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640!2d120.68!3d24.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzI0LjAiTiAxMjDCsDQwJzQ4LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1",
     },
     footer: {
-      tagline: "預見專業，圖繪旅程 — 專業兒童物理治療與輔具設計",
+      tagline: "讓專業成為支撐，陪孩子預見未來的旅圖 — 專業兒童物理治療與3D客製化輔具",
       nav: "導航",
       contactTitle: "聯絡資訊",
       rights: "版權所有",
@@ -159,17 +160,17 @@ const TRANSLATIONS = {
     nav: {
       home: "Home",
       services: "Services",
-      product: "3D Orthotics",
+      product: "3D Custom Orthotics",
       workshops: "Workshops",
-      about: "About",
+      about: "Brand Intro",
       contact: "Contact",
       cta: "Book Now",
       langToggle: "中文",
     },
     hero: {
       badge: "Pediatric Physiotherapy",
-      headline: "Foresee the Path,",
-      headlineAccent: "Map the Journey",
+      headline: "Let Expertise Be the Support,",
+      headlineAccent: "Guiding Every Child's Journey.",
       subtext: "Specialized physiotherapy designed for children, combining professional expertise with warm care — from the clinic to the outdoors, supporting every child's journey of exploration.",
       ctaPrimary: "Book Consultation",
       ctaSecondary: "Learn More",
@@ -196,8 +197,9 @@ const TRANSLATIONS = {
     },
     product: {
       label: "Innovation",
-      title: "3D Printed Custom Orthotics",
+      title: "3D Custom Assistive Devices",
       subtitle: "Using advanced 3D printing technology to create perfectly fitted hand orthotics for every child.",
+      missionSlogan: "We don't just make assistive devices — we help families draw blueprints toward hope. We turn expertise into the most stable support, so children can stand on the shoulders of professionals and foresee a broader, more expansive future.",
       badge: "Patented Technology",
       features: [
         { icon: "ScanLine", title: "Fully Custom", desc: "Precisely designed from 3D scans of each child's hand for a perfect fit." },
@@ -240,8 +242,8 @@ const TRANSLATIONS = {
       ctaSubtext: "Schools, institutions, and groups are welcome to book customized lectures and workshops",
     },
     about: {
-      label: "About Us",
-      title: "Foresee Journey",
+      label: "Brand Introduction",
+      title: "Foresee Journey: Brand Introduction",
       tagline: "Foresee Expertise, Map the Journey.",
       intro: "Foresee Journey was born from our deep belief that every child deserves the right to explore the world.",
       foreseeTitle: "\"Foresee\"",
@@ -279,7 +281,7 @@ const TRANSLATIONS = {
       mapUrl: "https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3640!2d120.68!3d24.14!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x0!2zMjTCsDA4JzI0LjAiTiAxMjDCsDQwJzQ4LjAiRQ!5e0!3m2!1szh-TW!2stw!4v1",
     },
     footer: {
-      tagline: "Foresee Expertise, Map the Journey — Pediatric Physiotherapy & Custom Orthotics",
+      tagline: "Let Expertise Be the Support — Pediatric Physiotherapy & 3D Custom Assistive Devices",
       nav: "Navigation",
       contactTitle: "Contact",
       rights: "All rights reserved",
@@ -304,21 +306,21 @@ const TRANSLATIONS = {
    COLORS & GLOBAL STYLES
    ═══════════════════════════════════════════════════════════════════════ */
 const C = {
-  primary: "#5BAF8A",
-  primaryLight: "#8DCBAA",
-  primaryDark: "#3D8A6A",
-  accent: "#E8C84A",
-  accentHover: "#D4B53E",
-  secondary: "#7BBAD4",
-  bg: "#FAF7F2",
-  bgAlt: "#F5F0E8",
-  bgDark: "#2E4A3E",
-  text: "#3A3A3A",
-  textMuted: "#7A7A7A",
-  textLight: "#A0A0A0",
-  cardBg: "#FFFFFF",
-  border: "#E8DFD0",
-  borderLight: "#F2EBDF",
+  primary:      "#5BAE8B",   // Warm teal-green (logo body)
+  primaryLight: "#8DCBAA",   // Light green
+  primaryDark:  "#3E6B5E",   // Deep forest green (warmer)
+  accent:       "#E8BE4A",   // Warm gold (logo star)
+  accentHover:  "#D4AB3E",   // Darker gold hover
+  secondary:    "#7EC5D8",   // Powder blue (logo ribbon)
+  bg:           "#F7F3EB",   // Warm cream beige 米色
+  bgAlt:        "#F0EBDF",   // Warmer sand
+  bgDark:       "#2F4B3F",   // Dark forest green
+  text:         "#3A4A44",   // Dark teal-gray (warm)
+  textMuted:    "#6E7F77",   // Muted green-gray
+  textLight:    "#9AABA3",   // Light muted
+  cardBg:       "#FFFDF9",   // Warm white
+  border:       "#E5DCD0",   // Warm beige border
+  borderLight:  "#F0E9DD",   // Light warm beige
 };
 
 const GLOBAL_STYLES = `
@@ -362,7 +364,7 @@ const GLOBAL_STYLES = `
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 32px rgba(91, 175, 138, 0.08), inset 0 1px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 8px 32px rgba(91, 174, 139, 0.08), inset 0 1px 1px rgba(255,255,255,0.9);
   }
 `;
 
@@ -654,7 +656,7 @@ function ParticleCanvas() {
     window.addEventListener("mousemove", onMouse);
 
     let animId;
-    const colors = [`rgba(91,175,138,`, `rgba(232,200,74,`, `rgba(123,186,212,`];
+    const colors = [`rgba(91,174,139,`, `rgba(232,190,74,`, `rgba(126,197,216,`];
     const render = () => {
       const w = parseFloat(canvas.style.width), h = parseFloat(canvas.style.height);
       ctx.clearRect(0, 0, w, h);
@@ -738,7 +740,7 @@ function Navbar({ currentPage, t, lang, setLang }) {
       <motion.nav role="navigation" initial={{ y: -100 }} animate={{ y: 0 }} transition={{ duration: 0.8, ease: EASE }}
         className="fixed top-0 left-0 right-0 z-50 transition-all duration-500"
         style={{
-          background: navBg ? "rgba(250,247,242,0.95)" : "transparent",
+          background: navBg ? "rgba(247,243,235,0.95)" : "transparent",
           backdropFilter: navBg ? "blur(16px)" : "none",
           borderBottom: navBg ? `1px solid ${C.border}` : "1px solid transparent",
           padding: scrolled ? "0.5rem 0" : "0.8rem 0",
@@ -1085,6 +1087,17 @@ function ProductPage({ t }) {
 
       <WaveDivider color={C.bg} />
 
+      {/* Mission Slogan */}
+      <section className="py-14 sm:py-16" style={{ background: C.bg }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <Reveal>
+            <p className="font-heading text-lg sm:text-xl lg:text-[1.35rem] font-medium leading-[2.2]" style={{ color: C.text }}>
+              {t.product.missionSlogan}
+            </p>
+          </Reveal>
+        </div>
+      </section>
+
       {/* Inspirational Quote */}
       <section className="py-16 sm:py-20" style={{ background: `linear-gradient(135deg, ${C.primary}08, ${C.accent}06)` }}>
         <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
@@ -1206,8 +1219,44 @@ function ProductPage({ t }) {
         </div>
       </section>
 
-      {/* Timeline */}
+      {/* Product Showcase — Individual Products (details coming soon) */}
       <section className="py-20 lg:py-28" style={{ background: C.bg }}>
+        <div className="max-w-6xl mx-auto px-5 lg:px-8">
+          <SectionHeading
+            label={t.nav.home === "首頁" ? "成品展示" : "Product Showcase"}
+            title={t.nav.home === "首頁" ? "每一件輔具，都是為孩子量身打造" : "Every Device, Tailor-Made for Your Child"}
+            subtitle={t.nav.home === "首頁" ? "每款成品都有專屬介紹頁面，敬請期待更多詳細資訊。" : "Each finished product will have its own dedicated page. More details coming soon."} />
+          <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
+            {[
+              { src: "/images/3d-hand-green.jpeg", name: t.nav.home === "首頁" ? "綠色副木" : "Green Orthotic" },
+              { src: "/images/3d-hand-orange.jpeg", name: t.nav.home === "首頁" ? "橘色兒童副木" : "Orange Pediatric Orthotic" },
+              { src: "/images/3d-hand-yellow-pair.jpeg", name: t.nav.home === "首頁" ? "黃色副木對" : "Yellow Orthotic Pair" },
+              { src: "/images/3d-hand-black-worn.jpeg", name: t.nav.home === "首頁" ? "黑色副木" : "Black Orthotic" },
+              { src: "/images/fitting-child.jpeg", name: t.nav.home === "首頁" ? "兒童試戴" : "Child Fitting" },
+              { src: "/images/3d-hand-collage.jpeg", name: t.nav.home === "首頁" ? "製作過程總覽" : "Process Overview" },
+            ].map((product, i) => (
+              <ScrollReveal key={i} delay={i * 0.08}>
+                <div className="rounded-2xl overflow-hidden group cursor-pointer transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                  style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
+                  <div className="aspect-square overflow-hidden">
+                    <ProductImage src={product.src} alt={product.name} iconFallback={Hand}
+                      className="w-full h-full transition-transform duration-700 group-hover:scale-105" />
+                  </div>
+                  <div className="p-4 text-center">
+                    <h4 className="font-heading text-base font-bold mb-1" style={{ color: C.text }}>{product.name}</h4>
+                    <p className="text-xs" style={{ color: C.textMuted }}>
+                      {t.nav.home === "首頁" ? "詳細介紹即將推出" : "Details coming soon"}
+                    </p>
+                  </div>
+                </div>
+              </ScrollReveal>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Timeline */}
+      <section className="py-20 lg:py-28" style={{ background: C.bgAlt }}>
         <div className="max-w-4xl mx-auto px-5 lg:px-8">
           <SectionHeading title={t.product.timeline.title} />
           <div className="relative">
@@ -1236,7 +1285,7 @@ function ProductPage({ t }) {
       </section>
 
       {/* FAQ */}
-      <section className="py-20 lg:py-28" style={{ background: C.bgAlt }}>
+      <section className="py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-3xl mx-auto px-5 lg:px-8">
           <SectionHeading title={t.product.faq.title} />
           <div className="space-y-4">
@@ -1568,7 +1617,7 @@ function FloatingLine({ t, lang }) {
             initial={{ y: 100 }} animate={{ y: 0 }} exit={{ y: 100 }}
             transition={{ duration: 0.4, ease: EASE }}
             className="fixed bottom-0 left-0 right-0 z-50 sm:hidden"
-            style={{ background: "rgba(250,247,242,0.95)", backdropFilter: "blur(16px)", borderTop: `1px solid ${C.border}`, padding: "0.6rem 1rem" }}>
+            style={{ background: "rgba(247,243,235,0.95)", backdropFilter: "blur(16px)", borderTop: `1px solid ${C.border}`, padding: "0.6rem 1rem" }}>
             <div className="flex items-center gap-2">
               <a href={`https://line.me/R/ti/p/${t.contact.line}`} target="_blank" rel="noopener noreferrer"
                 className="flex-1 inline-flex items-center justify-center gap-2 py-3 rounded-xl text-white text-sm font-bold no-underline"
@@ -1620,9 +1669,9 @@ function useSEO(page, lang) {
     const n = lang === "zh" ? "預見旅圖" : "Foresee Journey";
     const map = {
       home: { title: `${n} — ${lang === "zh" ? "兒童物理治療" : "Pediatric PT"}`, desc: lang === "zh" ? "專為兒童設計的物理治療服務" : "Specialized physiotherapy for children" },
-      services: { title: `${lang === "zh" ? "服務" : "Services"} — ${n}` }, product: { title: `${lang === "zh" ? "3D副木" : "3D Orthotics"} — ${n}` },
+      services: { title: `${lang === "zh" ? "服務" : "Services"} — ${n}` }, product: { title: `${lang === "zh" ? "3D客製化輔具" : "3D Custom Orthotics"} — ${n}` },
       workshops: { title: `${lang === "zh" ? "講座活動" : "Workshops"} — ${n}` },
-      about: { title: `${lang === "zh" ? "關於" : "About"} — ${n}` }, contact: { title: `${lang === "zh" ? "聯絡" : "Contact"} — ${n}` },
+      about: { title: `${lang === "zh" ? "品牌介紹" : "Brand Introduction"} — ${n}` }, contact: { title: `${lang === "zh" ? "聯絡" : "Contact"} — ${n}` },
     };
     const seo = map[page] || map.home;
     document.title = seo.title;
