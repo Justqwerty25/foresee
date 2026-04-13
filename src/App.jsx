@@ -306,15 +306,15 @@ const TRANSLATIONS = {
    COLORS & GLOBAL STYLES
    ═══════════════════════════════════════════════════════════════════════ */
 const C = {
-  primary:      "#5BAE8B",   // Warm teal-green (logo body)
-  primaryLight: "#8DCBAA",   // Light green
-  primaryDark:  "#3E6B5E",   // Deep forest green (warmer)
-  accent:       "#E8BE4A",   // Warm gold (logo star)
-  accentHover:  "#D4AB3E",   // Darker gold hover
+  primary:      "#AECEDB",   // Soft sky blue
+  primaryLight: "#C8DFE8",   // Lighter sky blue
+  primaryDark:  "#6A9DB3",   // Deeper blue
+  accent:       "#F0D17A",   // Warm soft gold
+  accentHover:  "#E0C060",   // Darker gold hover
   secondary:    "#7EC5D8",   // Powder blue (logo ribbon)
   bg:           "#F7F3EB",   // Warm cream beige 米色
   bgAlt:        "#F0EBDF",   // Warmer sand
-  bgDark:       "#2F4B3F",   // Dark forest green
+  bgDark:       "#2B3F4A",   // Dark blue-teal
   text:         "#3A4A44",   // Dark teal-gray (warm)
   textMuted:    "#6E7F77",   // Muted green-gray
   textLight:    "#9AABA3",   // Light muted
@@ -364,7 +364,7 @@ const GLOBAL_STYLES = `
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
     border: 1px solid rgba(255, 255, 255, 0.8);
-    box-shadow: 0 8px 32px rgba(91, 174, 139, 0.08), inset 0 1px 1px rgba(255,255,255,0.9);
+    box-shadow: 0 8px 32px rgba(174, 206, 219, 0.12), inset 0 1px 1px rgba(255,255,255,0.9);
   }
 `;
 
@@ -656,7 +656,7 @@ function ParticleCanvas() {
     window.addEventListener("mousemove", onMouse);
 
     let animId;
-    const colors = [`rgba(91,174,139,`, `rgba(232,190,74,`, `rgba(126,197,216,`];
+    const colors = [`rgba(174,206,219,`, `rgba(240,209,122,`, `rgba(126,197,216,`];
     const render = () => {
       const w = parseFloat(canvas.style.width), h = parseFloat(canvas.style.height);
       ctx.clearRect(0, 0, w, h);
