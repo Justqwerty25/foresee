@@ -1264,7 +1264,7 @@ function WorkshopsPage({ t }) {
       <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden"
         style={{ background: `linear-gradient(135deg, ${C.bgDark} 0%, ${C.primaryDark} 50%, ${C.bgDark} 100%)` }}>
         <div className="absolute inset-0 opacity-20"
-          style={{ backgroundImage: "url(/images/blog-presentatie.jpg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.4)" }} />
+          style={{ backgroundImage: "url(/images/workshop-lecture.jpeg)", backgroundSize: "cover", backgroundPosition: "center", filter: "brightness(0.4)" }} />
         <DecorativeStars count={8} />
         <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
           <a href="#home" onClick={(e) => { e.preventDefault(); navigate("home"); }}
@@ -1298,7 +1298,7 @@ function WorkshopsPage({ t }) {
                       <div className="rounded-3xl overflow-hidden aspect-[4/3] relative"
                         style={{ border: `1px solid ${C.primary}25` }}>
                         <ProductImage
-                          src={["/images/blog-presentatie.jpg", "/images/fitting-child.jpeg", "/images/3d-hand-collage.jpeg"][i]}
+                          src={["/images/workshop-lecture.jpeg", "/images/fitting-child.jpeg", "/images/3d-hand-collage.jpeg"][i]}
                           alt={section.title}
                           iconFallback={IconComp}
                           className="w-full h-full"
