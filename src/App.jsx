@@ -747,7 +747,7 @@ function Navbar({ currentPage, t, lang, setLang }) {
         }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8 flex items-center justify-between">
           <a href="#home" className="flex items-center gap-2 no-underline" onClick={(e) => { e.preventDefault(); navigate("home"); }}>
-            <img src="/images/foresee-logo.png" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain", borderRadius: "6px" }} />
+            <img src="/images/foresee-logo.png" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain" }} />
             <span className="font-heading text-lg font-bold tracking-tight hidden sm:block"
               style={{ color: navBg ? C.text : (isHome ? "#fff" : C.text) }}>
               {lang === "zh" ? "預見旅圖" : "Foresee Journey"}
@@ -1552,7 +1552,7 @@ function Footer({ t, lang }) {
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-8 sm:gap-12 mb-10">
           <div className="sm:col-span-2 lg:col-span-2">
             <a href="#home" onClick={(e) => { e.preventDefault(); navigate("home"); }} className="inline-flex items-center gap-2 mb-4 no-underline">
-              <img src="/images/foresee-logo.png" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain", borderRadius: "6px" }} />
+              <img src="/images/foresee-logo.png" alt="預見旅圖 Foresee Journey" style={{ height: "38px", objectFit: "contain" }} />
               <span className="font-heading text-lg font-bold text-white">{lang === "zh" ? "預見旅圖" : "Foresee Journey"}</span>
             </a>
             <p className="text-sm text-white/40 leading-relaxed max-w-xs mb-6">{t.footer.tagline}</p>
