@@ -5,7 +5,7 @@ import {
   ChevronDown, ChevronRight, Menu, X, ArrowUpRight, Star,
   Brain, Users, ArrowLeft, CheckCircle2, Home, Facebook,
   Printer, Hand, Sparkles, ScanLine, Wrench, MessageCircle,
-  Baby, Activity, Puzzle, Move, PersonStanding, HandHelping,
+  Baby, Activity, Puzzle, Move, PersonStanding, HandHelping, Moon,
 } from "lucide-react";
 
 /* ═══════════════════════════════════════════════════════════════════════
@@ -43,12 +43,10 @@ const TRANSLATIONS = {
       more: "了解更多",
       cta: "預約諮詢",
       items: [
-        { icon: "Baby", title: "發展評估", desc: "全面評估孩子的動作發展、感覺統合及日常功能表現，制定個別化治療計畫。", features: ["動作發展里程碑評估", "功能性活動分析", "個別化目標設定"] },
-        { icon: "Move", title: "動作訓練", desc: "透過遊戲化的治療活動，提升孩子的粗大動作能力，包括翻身、爬行、站立和行走。", features: ["粗大動作訓練", "平衡與協調訓練", "肌力強化活動"] },
-        { icon: "Puzzle", title: "感覺統合治療", desc: "針對感覺處理困難的孩子，提供適當的感覺刺激，改善日常生活適應能力。", features: ["前庭覺訓練", "觸覺調節活動", "本體覺強化"] },
-        { icon: "Hand", title: "手部精細動作", desc: "專注於手部功能訓練，包括抓握、操作和書寫等精細動作技巧的提升。", features: ["抓握與操作訓練", "手眼協調活動", "書寫前備技巧"] },
-        { icon: "PersonStanding", title: "姿勢訓練", desc: "矯正不良姿勢習慣，建立正確的身體排列，預防日後骨骼肌肉問題。", features: ["姿勢評估與矯正", "核心穩定訓練", "人體工學指導"] },
-        { icon: "HandHelping", title: "家長諮詢", desc: "提供家長專業的居家訓練指導，讓治療效果延伸至日常生活中。", features: ["居家活動指導", "環境調整建議", "發展階段諮詢"] },
+        { icon: "Activity", title: "動作發展", desc: "從粗大動作到精細操作，透過遊戲化的治療活動，全面提升孩子的動作發展能力與感覺統合表現。", href: "motor", features: ["動作發展里程碑評估", "粗大與精細動作訓練", "感覺統合治療", "手眼協調活動"] },
+        { icon: "Printer", title: "3D客製化輔具", desc: "運用先進3D列印技術，為每位孩子量身打造最合適的手部輔具，讓專業化為最穩定的支撐。", href: "product", features: ["3D掃描精準建模", "客製化設計與列印", "專業試戴與調整", "多彩兒童友善設計"] },
+        { icon: "Wrench", title: "輔具資訊與諮詢", desc: "提供完整的輔具資訊與專業諮詢服務，協助家長了解各式輔具的選擇、使用方式與照護建議。", href: "assistive", features: ["輔具選擇諮詢", "使用與照護指導", "居家環境評估建議", "輔具補助資訊"] },
+        { icon: "Clock", title: "24小時姿勢管理諮詢", desc: "不只在診間，更延伸到生活每一刻。提供全天候姿勢管理建議，從睡眠、坐姿到日常活動全方位守護。", href: "posture", features: ["睡眠姿勢評估", "坐姿與站姿矯正", "日常活動姿勢指導", "輔具搭配建議"] },
       ],
     },
     product: {
@@ -96,6 +94,43 @@ const TRANSLATIONS = {
       ],
       cta: "預約講座諮詢",
       ctaSubtext: "歡迎學校、機構或團體預約客製化講座與工作坊",
+    },
+    motor: {
+      label: "專業服務",
+      title: "動作發展",
+      subtitle: "從粗大動作到精細操作，透過遊戲化的治療活動，全面提升孩子的動作發展能力。",
+      sections: [
+        { title: "發展評估", desc: "全面評估孩子的動作發展、感覺統合及日常功能表現，制定個別化治療計畫，為每一位孩子找到最適合的成長路徑。", features: ["動作發展里程碑評估", "功能性活動分析", "個別化目標設定", "定期追蹤與調整"] },
+        { title: "動作訓練", desc: "透過遊戲化的治療活動，提升孩子的粗大動作能力，包括翻身、爬行、站立和行走，讓每一步都充滿自信。", features: ["粗大動作訓練", "平衡與協調訓練", "肌力強化活動", "功能性動作練習"] },
+        { title: "感覺統合治療", desc: "針對感覺處理困難的孩子，提供適當的感覺刺激，改善日常生活適應能力，讓孩子更自在地探索世界。", features: ["前庭覺訓練", "觸覺調節活動", "本體覺強化", "感覺飲食計畫"] },
+        { title: "手部精細動作", desc: "專注於手部功能訓練，包括抓握、操作和書寫等精細動作技巧的提升，為學習與生活奠定基礎。", features: ["抓握與操作訓練", "手眼協調活動", "書寫前備技巧", "日常自理能力訓練"] },
+      ],
+      cta: "預約動作發展評估",
+    },
+    assistive: {
+      label: "專業服務",
+      title: "輔具資訊與諮詢",
+      subtitle: "提供完整的輔具資訊與專業諮詢服務，協助家庭做出最適合的選擇。",
+      sections: [
+        { title: "輔具選擇諮詢", desc: "根據孩子的個別需求，提供專業的輔具選擇建議，從評估到推薦，確保每一項輔具都能真正幫助孩子的發展。", features: ["個別化需求評估", "輔具類型介紹", "品牌與規格比較", "試用與體驗"] },
+        { title: "使用與照護指導", desc: "詳細指導家長正確使用與維護輔具的方法，延長輔具使用壽命，確保孩子獲得最佳的支撐效果。", features: ["配戴方式教學", "清潔與保養指導", "調整與微調技巧", "常見問題排解"] },
+        { title: "居家環境評估", desc: "評估孩子的居家環境，提供空間調整與輔具配置建議，讓家成為最好的復健場所。", features: ["空間動線評估", "家具與設備調整建議", "安全性檢查", "無障礙環境規劃"] },
+        { title: "補助資訊與申請", desc: "協助家長了解政府輔具補助政策，提供申請流程指導，減輕家庭的經濟負擔。", features: ["補助政策說明", "申請流程指導", "所需文件準備", "後續追蹤協助"] },
+      ],
+      cta: "預約輔具諮詢",
+    },
+    posture: {
+      label: "專業服務",
+      title: "24小時姿勢管理諮詢",
+      subtitle: "不只在診間，更延伸到生活每一刻。全天候守護孩子的姿勢健康。",
+      heroQuote: "姿勢管理不是一時的矯正，而是融入生活的每一個細節。",
+      sections: [
+        { title: "睡眠姿勢管理", desc: "評估並指導適合孩子的睡眠姿勢，搭配適當的擺位輔具，確保夜間也能持續進行姿勢矯正與預防。", features: ["睡眠擺位評估", "枕頭與床墊建議", "夜間輔具搭配", "定期追蹤調整"] },
+        { title: "坐姿與站姿矯正", desc: "針對孩子日常的坐姿與站姿進行評估與矯正，建立正確的身體排列習慣，預防長期骨骼肌肉問題。", features: ["坐姿評估與矯正", "站姿平衡訓練", "核心穩定強化", "人體工學指導"] },
+        { title: "日常活動指導", desc: "將姿勢管理融入孩子的日常活動中，從吃飯、寫功課到遊戲，每一刻都是訓練的機會。", features: ["進食姿勢指導", "學習姿勢優化", "遊戲與運動建議", "外出活動注意事項"] },
+        { title: "輔具搭配建議", desc: "根據不同情境推薦適合的姿勢管理輔具，從座椅、站立架到擺位系統，打造完整的支撐方案。", features: ["座椅系統評估", "站立架選擇", "擺位輔具建議", "輔具使用時程規劃"] },
+      ],
+      cta: "預約姿勢管理諮詢",
     },
     about: {
       label: "品牌介紹",
@@ -187,12 +222,10 @@ const TRANSLATIONS = {
       more: "Learn More",
       cta: "Book Consultation",
       items: [
-        { icon: "Baby", title: "Developmental Assessment", desc: "Comprehensive evaluation of motor development, sensory integration, and daily function to create individualized treatment plans.", features: ["Motor milestone assessment", "Functional activity analysis", "Individualized goal setting"] },
-        { icon: "Move", title: "Motor Skills Training", desc: "Through play-based therapy activities, improve gross motor skills including rolling, crawling, standing, and walking.", features: ["Gross motor training", "Balance & coordination", "Strength building"] },
-        { icon: "Puzzle", title: "Sensory Integration", desc: "For children with sensory processing difficulties, providing appropriate sensory input to improve daily life adaptation.", features: ["Vestibular training", "Tactile regulation", "Proprioceptive enhancement"] },
-        { icon: "Hand", title: "Fine Motor Skills", desc: "Focused on hand function training, including grasping, manipulation, and writing skill improvement.", features: ["Grasp & manipulation", "Hand-eye coordination", "Pre-writing skills"] },
-        { icon: "PersonStanding", title: "Posture Training", desc: "Correcting poor posture habits, establishing proper body alignment, preventing future musculoskeletal issues.", features: ["Posture assessment", "Core stability training", "Ergonomic guidance"] },
-        { icon: "HandHelping", title: "Parent Consultation", desc: "Professional home training guidance for parents, extending therapy benefits into daily life.", features: ["Home activity guidance", "Environment modification", "Developmental counseling"] },
+        { icon: "Activity", title: "Motor Development", desc: "From gross motor to fine manipulation, through play-based therapy, we comprehensively enhance children's motor development and sensory integration.", href: "motor", features: ["Motor milestone assessment", "Gross & fine motor training", "Sensory integration therapy", "Hand-eye coordination"] },
+        { icon: "Printer", title: "3D Custom Orthotics", desc: "Using advanced 3D printing technology, we create perfectly fitted hand orthotics for every child — turning expertise into support.", href: "product", features: ["Precision 3D scanning", "Custom design & printing", "Professional fitting", "Colorful child-friendly designs"] },
+        { icon: "Wrench", title: "Assistive Device Consultation", desc: "Complete assistive device information and professional consultation to help parents understand selection, usage, and care of various devices.", href: "assistive", features: ["Device selection guidance", "Usage & care instruction", "Home environment assessment", "Subsidy information"] },
+        { icon: "Clock", title: "24hr Posture Management", desc: "Beyond the clinic, extending into every moment of life. Round-the-clock posture management advice covering sleep, sitting, and daily activities.", href: "posture", features: ["Sleep posture assessment", "Sitting & standing correction", "Daily activity guidance", "Device coordination advice"] },
       ],
     },
     product: {
@@ -240,6 +273,43 @@ const TRANSLATIONS = {
       ],
       cta: "Book a Workshop",
       ctaSubtext: "Schools, institutions, and groups are welcome to book customized lectures and workshops",
+    },
+    motor: {
+      label: "Professional Services",
+      title: "Motor Development",
+      subtitle: "From gross motor to fine manipulation, comprehensively enhancing every child's motor development through play-based therapy.",
+      sections: [
+        { title: "Developmental Assessment", desc: "Comprehensive evaluation of motor development, sensory integration, and daily function to create individualized treatment plans for each child's optimal growth path.", features: ["Motor milestone assessment", "Functional activity analysis", "Individualized goal setting", "Regular tracking & adjustment"] },
+        { title: "Motor Skills Training", desc: "Through play-based therapy activities, improve gross motor skills including rolling, crawling, standing, and walking — building confidence with every step.", features: ["Gross motor training", "Balance & coordination", "Strength building", "Functional movement practice"] },
+        { title: "Sensory Integration", desc: "For children with sensory processing difficulties, providing appropriate sensory input to improve daily life adaptation and comfortable world exploration.", features: ["Vestibular training", "Tactile regulation", "Proprioceptive enhancement", "Sensory diet planning"] },
+        { title: "Fine Motor Skills", desc: "Focused on hand function training including grasping, manipulation, and writing skills — building foundations for learning and daily life.", features: ["Grasp & manipulation", "Hand-eye coordination", "Pre-writing skills", "Daily self-care training"] },
+      ],
+      cta: "Book Motor Assessment",
+    },
+    assistive: {
+      label: "Professional Services",
+      title: "Assistive Device Consultation",
+      subtitle: "Complete assistive device information and professional consultation to help families make the best choices.",
+      sections: [
+        { title: "Device Selection Guidance", desc: "Based on each child's individual needs, providing professional device selection advice — from assessment to recommendation, ensuring every device truly supports development.", features: ["Individualized needs assessment", "Device type introduction", "Brand & spec comparison", "Trial & experience"] },
+        { title: "Usage & Care Instruction", desc: "Detailed guidance for parents on proper use and maintenance of devices, extending device lifespan and ensuring optimal support for children.", features: ["Fitting instruction", "Cleaning & maintenance", "Adjustment techniques", "Troubleshooting"] },
+        { title: "Home Environment Assessment", desc: "Evaluating the child's home environment and providing space adjustment and device placement recommendations — making home the best rehabilitation setting.", features: ["Space & flow assessment", "Furniture & equipment advice", "Safety inspection", "Accessibility planning"] },
+        { title: "Subsidy Information", desc: "Helping parents understand government assistive device subsidy policies and providing application process guidance to ease family financial burden.", features: ["Policy overview", "Application guidance", "Document preparation", "Follow-up assistance"] },
+      ],
+      cta: "Book Device Consultation",
+    },
+    posture: {
+      label: "Professional Services",
+      title: "24hr Posture Management",
+      subtitle: "Beyond the clinic, extending into every moment of life. Round-the-clock posture health for children.",
+      heroQuote: "Posture management isn't momentary correction — it's woven into every detail of life.",
+      sections: [
+        { title: "Sleep Posture Management", desc: "Assessing and guiding appropriate sleep positions for children, with proper positioning devices, ensuring nighttime posture correction and prevention.", features: ["Sleep positioning assessment", "Pillow & mattress advice", "Nighttime device coordination", "Regular tracking adjustment"] },
+        { title: "Sitting & Standing Correction", desc: "Evaluating and correcting children's daily sitting and standing posture, building proper body alignment habits to prevent long-term musculoskeletal issues.", features: ["Sitting posture correction", "Standing balance training", "Core stability strengthening", "Ergonomic guidance"] },
+        { title: "Daily Activity Guidance", desc: "Integrating posture management into children's daily activities — from eating and homework to play, every moment is a training opportunity.", features: ["Eating posture guidance", "Study posture optimization", "Play & exercise advice", "Outing considerations"] },
+        { title: "Device Coordination", desc: "Recommending appropriate posture management devices for different scenarios — from seating systems to standing frames, creating comprehensive support solutions.", features: ["Seating system assessment", "Standing frame selection", "Positioning device advice", "Device usage scheduling"] },
+      ],
+      cta: "Book Posture Consultation",
     },
     about: {
       label: "Brand Introduction",
@@ -391,7 +461,7 @@ const ICON_MAP = {
   ChevronDown, ChevronRight, Menu, X, ArrowUpRight, Star,
   Brain, Users, ArrowLeft, CheckCircle2, Home, Facebook,
   Printer, Hand, Sparkles, ScanLine, Wrench, MessageCircle,
-  Baby, Activity, Puzzle, Move, PersonStanding, HandHelping,
+  Baby, Activity, Puzzle, Move, PersonStanding, HandHelping, Moon,
 };
 
 function Icon({ name, size = 24, className = "", ...props }) {
@@ -990,51 +1060,301 @@ function HomePage({ t }) {
    SERVICES PAGE
    ═══════════════════════════════════════════════════════════════════════ */
 function ServicesPage({ t }) {
+  const serviceIcons = [Activity, Printer, Wrench, Clock];
   return (
     <>
       <PageHero title={t.services.title} subtitle={t.services.subtitle} t={t} />
       <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
         <div className="max-w-7xl mx-auto px-5 lg:px-8">
-          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
-            {t.services.items.map((service, i) => (
-              <ScrollReveal key={i}>
-                <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
-                  <div className="lg:[direction:ltr]">
-                    <div className="rounded-3xl overflow-hidden aspect-[4/3]"
-                      style={{ border: `1px solid ${C.primary}25` }}>
-                      <ProductImage
-                        src={["/images/packshot-white.png", "/images/packshot-sizes.jpg", "/images/product-yellow-single.jpg", "/images/product-green-backpack.jpg", "/images/detail-strap.jpg", "/images/lifestyle-shelf.jpg"][i]}
-                        alt={service.title}
-                        iconFallback={(() => { const icons = [Baby, Move, Puzzle, Hand, PersonStanding, HandHelping]; return icons[i] || Hand; })()}
-                        className="w-full h-full"
-                      />
-                    </div>
-                  </div>
-                  <div className="lg:[direction:ltr]">
+          <div className="grid grid-cols-1 md:grid-cols-2 gap-6 lg:gap-8">
+            {t.services.items.map((service, i) => {
+              const IconComp = serviceIcons[i] || Heart;
+              return (
+                <ScrollReveal key={i} delay={i * 0.1}>
+                  <div className="rounded-3xl p-8 sm:p-10 h-full flex flex-col transition-all duration-300 hover:-translate-y-1 hover:shadow-lg"
+                    style={{ background: C.cardBg, border: `1px solid ${C.border}` }}>
                     <div className="flex items-center gap-3 mb-4">
-                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
-                        <Icon name={service.icon} size={24} />
+                      <div className="w-12 h-12 rounded-2xl flex items-center justify-center"
+                        style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                        <IconComp size={24} />
                       </div>
-                      <h3 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: C.text }}>{service.title}</h3>
+                      <h3 className="font-heading text-xl sm:text-2xl font-bold tracking-tight" style={{ color: C.text }}>{service.title}</h3>
                     </div>
-                    <p className="text-[0.95rem] leading-relaxed mb-6" style={{ color: C.textMuted }}>{service.desc}</p>
-                    <ul className="space-y-3 mb-6">
+                    <p className="text-[0.95rem] leading-relaxed mb-5" style={{ color: C.textMuted }}>{service.desc}</p>
+                    <ul className="space-y-2.5 mb-6 flex-1">
                       {service.features.map((f, fi) => (
-                        <li key={fi} className="flex items-center gap-3 text-[0.95rem]" style={{ color: C.text }}>
-                          <CheckCircle2 size={18} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
+                        <li key={fi} className="flex items-center gap-2.5 text-[0.9rem]" style={{ color: C.text }}>
+                          <CheckCircle2 size={16} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
                         </li>
                       ))}
                     </ul>
-                    <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
-                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-semibold no-underline transition-all duration-300 hover:scale-[1.03]"
+                    <a href={`#${service.href}`}
+                      onClick={(e) => { e.preventDefault(); navigate(service.href); }}
+                      className="inline-flex items-center gap-2 px-6 py-3 rounded-xl text-white text-sm font-semibold no-underline transition-all duration-300 hover:scale-[1.03] self-start"
                       style={{ background: `linear-gradient(135deg, ${C.primary}, ${C.primaryDark})` }}>
-                      <Phone size={16} /> {t.services.cta}
+                      {t.services.more} <ArrowUpRight size={16} />
                     </a>
                   </div>
-                </div>
-              </ScrollReveal>
-            ))}
+                </ScrollReveal>
+              );
+            })}
           </div>
+        </div>
+      </section>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   MOTOR DEVELOPMENT PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+function MotorDevelopmentPage({ t }) {
+  const m = t.motor;
+  const sectionIcons = [Baby, Move, Puzzle, Hand];
+  return (
+    <>
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${C.primaryDark} 0%, ${C.bgDark} 50%, ${C.primaryDark} 100%)` }}>
+        <DecorativeStars count={8} />
+        <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
+          <a href="#services" onClick={(e) => { e.preventDefault(); navigate("services"); }}
+            className="inline-flex items-center gap-2 text-white/50 text-sm font-medium no-underline hover:text-white/80 transition-colors mb-8">
+            <ArrowLeft size={16} /> {t.services.title}
+          </a>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: EASE }} className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase mb-6"
+              style={{ background: `${C.accent}20`, color: C.accent, border: `1px solid ${C.accent}30` }}>
+              <Activity size={12} /> {m.label}
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-5">{m.title}</h1>
+            <p className="text-base lg:text-lg text-white/60 max-w-lg leading-relaxed">{m.subtitle}</p>
+          </motion.div>
+        </div>
+      </section>
+
+      <WaveDivider color={C.bg} />
+
+      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
+            {m.sections.map((section, i) => {
+              const IconComp = sectionIcons[i] || Activity;
+              return (
+                <ScrollReveal key={i}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
+                    <div className="lg:[direction:ltr]">
+                      <div className="rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+                        style={{ background: `linear-gradient(135deg, ${C.primary}15, ${C.accent}10)`, border: `1px solid ${C.primary}25` }}>
+                        <IconComp size={80} style={{ color: C.primaryDark, opacity: 0.3 }} />
+                      </div>
+                    </div>
+                    <div className="lg:[direction:ltr]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                          <IconComp size={24} />
+                        </div>
+                        <h3 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: C.text }}>{section.title}</h3>
+                      </div>
+                      <p className="text-[0.95rem] leading-relaxed mb-6" style={{ color: C.textMuted }}>{section.desc}</p>
+                      <ul className="space-y-3">
+                        {section.features.map((f, fi) => (
+                          <li key={fi} className="flex items-center gap-3 text-[0.95rem]" style={{ color: C.text }}>
+                            <CheckCircle2 size={18} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20" style={{ background: C.bgAlt }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <ScrollReveal>
+            <div className="p-10 sm:p-14 rounded-3xl" style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-6 tracking-tight">{m.cta}</h2>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:scale-[1.03]"
+                style={{ background: C.accent, color: C.bgDark }}>
+                <Phone size={18} /> {m.cta}
+              </a>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   ASSISTIVE DEVICE CONSULTATION PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+function AssistiveDevicePage({ t }) {
+  const a = t.assistive;
+  const sectionIcons = [Wrench, ShieldCheck, Home, Award];
+  return (
+    <>
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${C.primaryDark} 0%, ${C.bgDark} 50%, ${C.primaryDark} 100%)` }}>
+        <DecorativeStars count={8} />
+        <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
+          <a href="#services" onClick={(e) => { e.preventDefault(); navigate("services"); }}
+            className="inline-flex items-center gap-2 text-white/50 text-sm font-medium no-underline hover:text-white/80 transition-colors mb-8">
+            <ArrowLeft size={16} /> {t.services.title}
+          </a>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: EASE }} className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase mb-6"
+              style={{ background: `${C.accent}20`, color: C.accent, border: `1px solid ${C.accent}30` }}>
+              <Wrench size={12} /> {a.label}
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-5">{a.title}</h1>
+            <p className="text-base lg:text-lg text-white/60 max-w-lg leading-relaxed">{a.subtitle}</p>
+          </motion.div>
+        </div>
+      </section>
+
+      <WaveDivider color={C.bg} />
+
+      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
+            {a.sections.map((section, i) => {
+              const IconComp = sectionIcons[i] || Wrench;
+              return (
+                <ScrollReveal key={i}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
+                    <div className="lg:[direction:ltr]">
+                      <div className="rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+                        style={{ background: `linear-gradient(135deg, ${C.primary}15, ${C.accent}10)`, border: `1px solid ${C.primary}25` }}>
+                        <IconComp size={80} style={{ color: C.primaryDark, opacity: 0.3 }} />
+                      </div>
+                    </div>
+                    <div className="lg:[direction:ltr]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                          <IconComp size={24} />
+                        </div>
+                        <h3 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: C.text }}>{section.title}</h3>
+                      </div>
+                      <p className="text-[0.95rem] leading-relaxed mb-6" style={{ color: C.textMuted }}>{section.desc}</p>
+                      <ul className="space-y-3">
+                        {section.features.map((f, fi) => (
+                          <li key={fi} className="flex items-center gap-3 text-[0.95rem]" style={{ color: C.text }}>
+                            <CheckCircle2 size={18} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20" style={{ background: C.bgAlt }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <ScrollReveal>
+            <div className="p-10 sm:p-14 rounded-3xl" style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-6 tracking-tight">{a.cta}</h2>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:scale-[1.03]"
+                style={{ background: C.accent, color: C.bgDark }}>
+                <Phone size={18} /> {a.cta}
+              </a>
+            </div>
+          </ScrollReveal>
+        </div>
+      </section>
+    </>
+  );
+}
+
+/* ═══════════════════════════════════════════════════════════════════════
+   24HR POSTURE MANAGEMENT PAGE
+   ═══════════════════════════════════════════════════════════════════════ */
+function PostureManagementPage({ t }) {
+  const p = t.posture;
+  const sectionIcons = [Moon, PersonStanding, Move, Wrench];
+  return (
+    <>
+      <section className="relative pt-28 pb-16 lg:pt-36 lg:pb-24 overflow-hidden"
+        style={{ background: `linear-gradient(135deg, ${C.primaryDark} 0%, ${C.bgDark} 50%, ${C.primaryDark} 100%)` }}>
+        <DecorativeStars count={8} />
+        <div className="relative z-10 max-w-7xl mx-auto px-5 lg:px-8">
+          <a href="#services" onClick={(e) => { e.preventDefault(); navigate("services"); }}
+            className="inline-flex items-center gap-2 text-white/50 text-sm font-medium no-underline hover:text-white/80 transition-colors mb-8">
+            <ArrowLeft size={16} /> {t.services.title}
+          </a>
+          <motion.div initial={{ opacity: 0, y: 30 }} animate={{ opacity: 1, y: 0 }} transition={{ duration: 0.8, ease: EASE }} className="max-w-3xl">
+            <span className="inline-flex items-center gap-2 px-3 py-1.5 rounded-full text-xs font-semibold uppercase mb-6"
+              style={{ background: `${C.accent}20`, color: C.accent, border: `1px solid ${C.accent}30` }}>
+              <Clock size={12} /> {p.label}
+            </span>
+            <h1 className="font-heading text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-white tracking-tight leading-[1.1] mb-5">{p.title}</h1>
+            <p className="text-base lg:text-lg text-white/60 max-w-lg leading-relaxed mb-6">{p.subtitle}</p>
+            {p.heroQuote && <p className="font-heading text-lg sm:text-xl text-white/80 italic leading-relaxed">{p.heroQuote}</p>}
+          </motion.div>
+        </div>
+      </section>
+
+      <WaveDivider color={C.bg} />
+
+      <section className="py-16 sm:py-20 lg:py-28" style={{ background: C.bg }}>
+        <div className="max-w-7xl mx-auto px-5 lg:px-8">
+          <div className="space-y-16 sm:space-y-24 lg:space-y-32">
+            {p.sections.map((section, i) => {
+              const IconComp = sectionIcons[i] || Clock;
+              return (
+                <ScrollReveal key={i}>
+                  <div className={`grid grid-cols-1 lg:grid-cols-2 gap-10 lg:gap-20 items-center ${i % 2 === 1 ? "lg:[direction:rtl]" : ""}`}>
+                    <div className="lg:[direction:ltr]">
+                      <div className="rounded-3xl overflow-hidden aspect-[4/3] flex items-center justify-center"
+                        style={{ background: `linear-gradient(135deg, ${C.primary}15, ${C.accent}10)`, border: `1px solid ${C.primary}25` }}>
+                        <IconComp size={80} style={{ color: C.primaryDark, opacity: 0.3 }} />
+                      </div>
+                    </div>
+                    <div className="lg:[direction:ltr]">
+                      <div className="flex items-center gap-3 mb-4">
+                        <div className="w-12 h-12 rounded-2xl flex items-center justify-center" style={{ background: `${C.primary}15`, color: C.primaryDark }}>
+                          <IconComp size={24} />
+                        </div>
+                        <h3 className="font-heading text-2xl sm:text-3xl font-bold tracking-tight" style={{ color: C.text }}>{section.title}</h3>
+                      </div>
+                      <p className="text-[0.95rem] leading-relaxed mb-6" style={{ color: C.textMuted }}>{section.desc}</p>
+                      <ul className="space-y-3">
+                        {section.features.map((f, fi) => (
+                          <li key={fi} className="flex items-center gap-3 text-[0.95rem]" style={{ color: C.text }}>
+                            <CheckCircle2 size={18} style={{ color: C.primaryDark }} className="flex-shrink-0" /> {f}
+                          </li>
+                        ))}
+                      </ul>
+                    </div>
+                  </div>
+                </ScrollReveal>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
+      <section className="py-16 sm:py-20" style={{ background: C.bgAlt }}>
+        <div className="max-w-3xl mx-auto px-5 lg:px-8 text-center">
+          <ScrollReveal>
+            <div className="p-10 sm:p-14 rounded-3xl" style={{ background: `linear-gradient(135deg, ${C.primaryDark}, ${C.bgDark})` }}>
+              <h2 className="font-heading text-2xl sm:text-3xl font-bold text-white mb-6 tracking-tight">{p.cta}</h2>
+              <a href="#contact" onClick={(e) => { e.preventDefault(); navigate("contact"); }}
+                className="inline-flex items-center gap-2.5 px-8 py-4 rounded-xl text-[0.9rem] font-semibold no-underline transition-all duration-300 hover:scale-[1.03]"
+                style={{ background: C.accent, color: C.bgDark }}>
+                <Phone size={18} /> {p.cta}
+              </a>
+            </div>
+          </ScrollReveal>
         </div>
       </section>
     </>
@@ -1670,6 +1990,9 @@ function useSEO(page, lang) {
     const map = {
       home: { title: `${n} — ${lang === "zh" ? "兒童物理治療" : "Pediatric PT"}`, desc: lang === "zh" ? "專為兒童設計的物理治療服務" : "Specialized physiotherapy for children" },
       services: { title: `${lang === "zh" ? "服務" : "Services"} — ${n}` }, product: { title: `${lang === "zh" ? "3D客製化輔具" : "3D Custom Orthotics"} — ${n}` },
+      motor: { title: `${lang === "zh" ? "動作發展" : "Motor Development"} — ${n}` },
+      assistive: { title: `${lang === "zh" ? "輔具資訊與諮詢" : "Assistive Devices"} — ${n}` },
+      posture: { title: `${lang === "zh" ? "24小時姿勢管理" : "Posture Management"} — ${n}` },
       workshops: { title: `${lang === "zh" ? "講座活動" : "Workshops"} — ${n}` },
       about: { title: `${lang === "zh" ? "品牌介紹" : "Brand Introduction"} — ${n}` }, contact: { title: `${lang === "zh" ? "聯絡" : "Contact"} — ${n}` },
     };
@@ -1705,6 +2028,9 @@ export default function App() {
   const renderPage = () => {
     switch (currentPage) {
       case "services": return <ServicesPage t={t} />;
+      case "motor": return <MotorDevelopmentPage t={t} />;
+      case "assistive": return <AssistiveDevicePage t={t} />;
+      case "posture": return <PostureManagementPage t={t} />;
       case "product": return <ProductPage t={t} />;
       case "workshops": return <WorkshopsPage t={t} />;
       case "about": return <AboutPage t={t} />;
